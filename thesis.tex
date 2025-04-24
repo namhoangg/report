@@ -1,0 +1,100 @@
+% 'draft' mode can be used to speed up compilation
+\documentclass[draft]{hcmut-thesis}
+
+% \usepackage{pdfpages}
+%\usepackage[draft,pageno]{listofsymbols}
+
+% Draft watermark
+% https://github.com/callegar/LaTeX-draftwatermark
+
+% References
+% Use \Cref{} instead of \ref{}
+\usepackage{amsmath}
+\usepackage[nameinlink]{cleveref}
+\usepackage{url}
+
+% Table color
+\usepackage[table]{xcolor}
+
+% Figure Float
+\usepackage{float}
+
+% FOR DEMONSTRATION PURPOSES, REMOVE IN PRODUCTION
+\usepackage{blindtext}
+
+% Sub-preambles
+% https://tex.stackexchange.com/a/395416
+
+% Configurations
+\reporttype{
+REPORT\\
+SPECIALIZED PROJECT}
+\title{Building a system for enterprises to introduce services and quotation in the field of transportation and freight forwarding}
+\defcouncil{COMPUTER SCIENCE - CLC 04}
+\supervisor{
+  Dr. Nguyễn Thị Ái Thảo
+  
+  M.Sc. Trần Thị Quế Nguyệt
+}
+% \secretary{Assoc.~Prof.~Dr.~H}
+% \reviewer{Assoc.~Prof.~Dr.~H}
+\stuname{
+  STUDENT 1: Hoàng Đại Nam - 2153594
+
+  STUDENT 2: Vũ Minh Quân - 2152926
+}
+
+% Allow page breaks inside align* environment
+%\allowdisplaybreaks{}
+
+% Makes a lot of things blue, avoid at all costs
+%\everymath{\color{blue}}
+
+% Custom commands
+%\newcommand*\mean[1]{\bar{#1}}
+
+\begin{document}
+\coverpage%
+
+\frontmatter%
+
+%\includepdf[pages=-]{details.pdf}
+\include{chapters/front/declaration.tex}
+\include{chapters/front/acknowledge.tex}
+\include{chapters/front/abstract.tex}
+\include{chapters/front/chapter-summary}
+
+\tableofcontents
+%\clearpage
+%\listofsymbols%
+\clearpage
+\listoftables
+\clearpage
+\listoffigures
+
+\mainmatter%
+
+% Set depth of numbering depth for counters
+\counterwithin{equation}{section}
+\counterwithin{table}{section}
+\counterwithin{figure}{section}
+
+\include{chapters/main/1.overview}
+\include{chapters/main/2.background-knowledge}
+\include{chapters/main/3.sys-analysis}
+\include{chapters/main/4.sys-design}
+\include{chapters/main/5.implementation}
+\include{chapters/main/6.chapter6}
+\include{chapters/main/7.final}
+
+\bibliographystyle{plainurl}
+\bibliography{refs/ref.bib}
+\nocite{*}
+
+\appendix%
+
+\include{chapters/back/task-assigment}
+
+\backmatter%
+
+\end{document}

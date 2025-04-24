@@ -1,0 +1,150 @@
+\chapter{System Implementation}
+
+\section{Technologies and Libraries Used}
+
+\subsection{Frontend Technologies}
+
+Our frontend implementation utilizes several modern technologies and libraries to create a responsive, maintainable, and user-friendly interface:
+
+\begin{itemize}
+    \item \textbf{Ant Design}: We implemented this comprehensive design system to provide high-quality React components for building elegant, consistent, and accessible user interfaces. Ant Design offered a robust set of UI elements that adhere to design principles and best practices, significantly reducing development time while maintaining visual consistency throughout the application.
+
+    \item \textbf{Redux Toolkit}: This official, opinionated toolkit for efficient Redux development simplified our store setup, reduced boilerplate code, and provided utilities for common Redux patterns. Its standardized approach to state management helped us maintain a predictable state container across the entire application.
+
+    \item \textbf{Redux Toolkit Query}: We leveraged this powerful data fetching and caching tool built into Redux Toolkit for automated data refetching, cache invalidation, and optimistic updates with minimal configuration. This significantly improved our API integration by providing a streamlined approach to data management.
+
+    \item \textbf{React Router}: This standard routing library for React applications enabled navigation between different components, allowing for dynamic routing and declarative route definitions. It provided a consistent user experience while navigating through different sections of the application.
+
+    \item \textbf{CKEditor}: For content creation functionality, we integrated this modern WYSIWYG rich text editor with features like image handling, formatting tools, and source code editing capabilities. This enhanced the user experience for creating and editing textual content within our system.
+
+    \item \textbf{Next.js Components}: We incorporated select Next.js elements for improved rendering performance, enhanced SEO capabilities, and streamlined application development. These components helped optimize our application's performance and search engine visibility.
+\end{itemize}
+
+\subsection{Backend Technologies}
+
+The backend of our system was built using robust Java-based technologies:
+
+\begin{itemize}
+    \item \textbf{Spring Boot}: This Java-based framework simplified the development of our standalone, production-grade application by providing auto-configuration, embedded servers, and application metrics. Spring Boot's convention-over-configuration approach accelerated development while maintaining high standards for security and performance.
+
+    \item \textbf{Java Persistence API (JPA)}: We implemented this Java specification for managing relational data as it provides a standard approach to Object-Relational Mapping (ORM), significantly reducing boilerplate database access code. JPA allowed us to work with database entities using object-oriented principles rather than SQL statements.
+
+    \item \textbf{Java JWT}: This library for JSON Web Token implementation in Java provided secure mechanisms for data transmission and authentication between parties. We utilized it to implement stateless authentication, enhancing security while maintaining scalability.
+\end{itemize}
+
+These technologies were selected based on their robustness, community support, documentation quality, and alignment with our project requirements. The combination provided a solid foundation for developing a scalable, maintainable, and performant freight forwarding management system.
+
+\section{Source Code}
+
+\subsection{Source Code Management}
+To manage our source code effectively, our project is organized using a modular approach, separating frontend and backend into distinct components. We use Git for version control, allowing the team to work concurrently on different features without conflicts.
+
+\subsection{Frontend Source Code Structure}
+The frontend source code is organized using a modular approach, where each feature or module can be developed independently. This not only improves maintainability but also simplifies future extensions.
+
+The frontend project has the following main directory structure:
+\begin{itemize}
+    \item \textbf{/apps} - Contains the main application
+    \begin{itemize}
+        \item \textbf{/lcp-apps/src} - Main source code of the application
+        \begin{itemize}
+            \item \textbf{/app} - Contains application initialization files
+            \begin{itemize}
+                \item \texttt{app.tsx} - Main file defining the application structure
+                \item \texttt{styles.scss} - Default style definitions
+                \item \texttt{main.tsx} - Entry point of the application
+            \end{itemize}
+        \end{itemize}
+    \end{itemize}
+    
+    \item \textbf{/libs} - Shared code libraries
+    \begin{itemize}
+        \item \textbf{/common} - Common code used throughout the application
+        \item \textbf{/components} - Reusable UI components
+        \item \textbf{/modules} - Functional modules of the application
+        \begin{itemize}
+            \item \textbf{/auth} - Authentication management
+            \item \textbf{/clients} - Client management
+            \item \textbf{...}
+        \end{itemize}
+    \end{itemize}
+\end{itemize}
+
+Each functional module is organized with a consistent structure:
+\begin{itemize}
+    \item \textbf{/assets} - Static assets like images and fonts
+    \item \textbf{/hooks} - Custom React hooks for reusable logic
+    \item \textbf{/components} - Module-specific UI components
+    \item \textbf{/containers} - Higher-level components containing business logic
+    \item \textbf{/i18n} - Internationalization files for the module
+    \item \textbf{/pages} - Main pages within the module
+    \item \textbf{/redux} - State management with Redux
+    \item \textbf{/services} - API services and data handling
+    \item \textbf{/types} - TypeScript type definitions
+\end{itemize}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.3\textwidth]{graphics/sys-design/frontend_folder_structure_1.png}
+  \caption{Frontend Source Code Structure}
+  \label{fig:frontend_structure}
+\end{figure} 
+
+
+This structure allows us to develop each feature independently while maintaining code reusability and consistency throughout the project.
+
+\subsection{Backend Source Code Structure}
+The backend is developed using Java with Spring Boot, following a layered architecture pattern that promotes separation of concerns and maintainability. Our backend follows standard Java package naming conventions with a comprehensive structure organized by technical responsibility.
+
+The main package structure reflects both cross-cutting concerns and feature modules:
+
+\begin{itemize}
+    \item \textbf{com.lcp} - Root package that contains all application code
+    \begin{itemize}
+        \item \textbf{base.dto} - Contains base data transfer object classes that establish inheritance hierarchies and common patterns for all DTOs in the system
+        \item \textbf{common} - Houses utilities, constants, and common components shared across the entire application
+        \item \textbf{configuration} - Contains Spring configuration classes, including bean definitions, property sources, and application profiles
+        \item \textbf{exception} - Centralizes exception handling with custom exception classes and global exception handlers
+        \item \textbf{security} - Implements authentication, authorization, and other security-related functionality
+        \item \textbf{util} - Provides general-purpose utility classes that support various operations throughout the application
+    \end{itemize}
+\end{itemize}
+
+Each business feature module follows a consistent layered architecture:
+
+\begin{itemize}
+    \item \textbf{/controller} - Contains REST API endpoints that handle HTTP requests and responses. Controllers are responsible for request validation, authentication verification, and routing to appropriate service methods.
+    
+    \item \textbf{/dto} - Data Transfer Objects that define the structure of data exchanged between the client and server. These objects isolate the internal entity model from external API contracts.
+    
+    \item \textbf{/entity} - JPA entity classes that map directly to database tables. These classes include field definitions, relationships, constraints, and JPA annotations.
+    
+    \item \textbf{/mapper} - Contains object mapper classes that transform data between entities and DTOs, ensuring clean separation between persistence and API layers.
+    
+    \item \textbf{/repository} - Implements the data access layer using Spring Data JPA repositories. These interfaces provide methods for CRUD operations and custom queries against the database.
+    
+    \item \textbf{/service} - Houses the business logic implementation. Service classes orchestrate operations across multiple repositories, implement transaction boundaries, and enforce business rules.
+    
+    \item \textbf{/common} - Module-specific utilities, constants, and shared components that are relevant only within the scope of the particular module.
+\end{itemize}
+
+This layered architecture provides several benefits:
+
+\begin{itemize}
+    \item Clear separation of concerns, making the codebase easier to understand and maintain
+    \item Improved testability with well-defined boundaries between layers
+    \item Consistent patterns across different modules that reduce cognitive load for developers
+    \item Flexibility to modify implementation details in one layer without affecting others
+    \item Enhanced security through proper encapsulation of business logic and data access
+\end{itemize}
+
+\begin{figure}[H]
+  \centering
+  \includegraphics[width=0.3\textwidth]{graphics/sys-design/backend_folder_structure_2.png}
+  \caption{Typical Module Internal Structure}
+  \label{fig:module_structure}
+\end{figure}
+
+The architecture follows the dependency inversion principle, with controllers depending on services, which depend on repositories, creating a clean flow of control and data throughout the application.
+
+\section{Interfaces implementation}

@@ -1,0 +1,286 @@
+\begin{thebibliography}{10}
+
+\bibitem{bezemer2010multitenant}
+Cor-Paul Bezemer and Andy Zaidman.
+\newblock Multi-tenant saas applications: maintenance dream or nightmare?
+\newblock In {\em Proceedings of the Joint ERCIM Workshop on Software Evolution
+  and International Workshop on Principles of Software Evolution}, pages
+  88--92, 2010.
+\newblock URL: \url{https://dl.acm.org/doi/10.1145/1862372.1862393}.
+
+\bibitem{multi-tenant-architecture}
+Stephen~J. Bigelow and Alexander~S. Gillis.
+\newblock What is multi-tenancy (multi-tenant architecture)?, 2024.
+\newblock Accessed: 2024-12-13.
+\newblock URL:
+  \url{https://www.techtarget.com/whatis/definition/multi-tenancy}.
+
+\bibitem{chong2006multitenant}
+Frederick Chong, Gianpaolo Carraro, and Roger Wolter.
+\newblock Multi-tenant data architecture, 2006.
+\newblock URL:
+  \url{https://docs.microsoft.com/en-us/previous-versions/aa479086(v=msdn.10)}.
+
+\bibitem{europa2023}
+European Commission.
+\newblock Digital transport and logistics forum, 2023.
+\newblock URL:
+  \url{https://transport.ec.europa.eu/transport-themes/digital-transport-and-logistics-forum-dtlf_en}.
+
+\bibitem{w3c2022}
+World Wide~Web Consortium.
+\newblock Web services architecture, 2022.
+\newblock URL: \url{https://www.w3.org/standards/webdesign/}.
+
+\bibitem{docker}
+Docker.
+\newblock What is {D}ocker?, n.d.
+\newblock Accessed: 2024-12-13.
+\newblock URL: \url{https://docs.docker.com/get-started/docker-overview/}.
+
+\bibitem{unescap2022}
+United~Nations Economic, Social~Commission for Asia, and the Pacific.
+\newblock Digital and sustainable trade facilitation report 2022, 2022.
+\newblock URL: \url{https://www.unescap.org/kp/2022/untf-survey-2023}.
+
+\bibitem{fielding2000rest}
+Roy~Thomas Fielding.
+\newblock Architectural styles and the design of network-based software
+  architectures.
+\newblock {\em Doctoral dissertation, University of California}, 2000.
+\newblock URL:
+  \url{https://www.ics.uci.edu/~fielding/pubs/dissertation/top.htm}.
+
+\bibitem{oecd2021}
+Organisation for Economic Co-operation and Development.
+\newblock The digital transformation of logistics, 2021.
+\newblock URL: \url{https://www.oecd.org/trade/topics/trade-facilitation/}.
+
+\bibitem{unece2021}
+United Nations Economic~Commission for Europe.
+\newblock Digital transformation for sustainable trade facilitation, 2021.
+\newblock URL: \url{https://unece.org/trade/uncefact/mainstandards}.
+
+\bibitem{unece2023}
+United Nations Economic~Commission for Europe.
+\newblock Trade facilitation and electronic business, 2023.
+\newblock URL: \url{https://unece.org/trade/uncefact}.
+
+\bibitem{nodejs-intro}
+Node.js Foundation.
+\newblock Introduction to node.js, n.d.
+\newblock Accessed: 2024-12-13.
+\newblock URL:
+  \url{https://nodejs.org/en/learn/getting-started/introduction-to-nodejs}.
+
+\bibitem{freightify}
+freightify.
+\newblock Powering {D}igital {T}ransformation for {F}reight {F}orwarders, n.d.
+\newblock Accessed: 2024-12-13.
+\newblock URL: \url{https://www.freightify.com/about-us}.
+
+\bibitem{html5}
+GeeksforGeeks.
+\newblock Html5 | {I}ntroduction, 2023.
+\newblock Accessed: 2024-12-13.
+\newblock URL: \url{https://www.geeksforgeeks.org/html5-introduction/}.
+
+\bibitem{css}
+GeeksforGeeks.
+\newblock Css {I}ntroduction, 2024.
+\newblock Accessed: 2024-12-13.
+\newblock URL: \url{https://www.geeksforgeeks.org/css-introduction/}.
+
+\bibitem{java-definition}
+GeeksforGeeks.
+\newblock Introduction to {J}ava, 2024.
+\newblock Accessed: 2024-12-13.
+\newblock URL: \url{https://www.geeksforgeeks.org/introduction-to-java/}.
+
+\bibitem{js}
+GeeksforGeeks.
+\newblock Introduction to {J}avascript, 2024.
+\newblock Accessed: 2024-12-13.
+\newblock URL: \url{https://www.geeksforgeeks.org/introduction-to-javascript/}.
+
+\bibitem{ant-design}
+GeeksforGeeks.
+\newblock Ant {D}esign, n.d.
+\newblock Accessed: 2024-12-13.
+\newblock URL: \url{https://www.geeksforgeeks.org/ant-design/}.
+
+\bibitem{usability2023}
+Nielsen~Norman Group.
+\newblock Ux guidelines for enterprise applications, 2023.
+\newblock URL: \url{https://www.nngroup.com/articles/}.
+
+\bibitem{worldbank2022}
+World~Bank Group.
+\newblock Logistics performance index: Connecting to compete 2022, 2022.
+\newblock URL: \url{https://lpi.worldbank.org/}.
+
+\bibitem{harris_microservices_vs_monolith}
+C.~Harris.
+\newblock Microservices vs. monolithic architecture, n.d.
+\newblock Accessed: 2024-12-13.
+\newblock URL:
+  \url{https://www.atlassian.com/microservices/microservices-architecture/microservices-vs-monolith}.
+
+\bibitem{ireland2009orm}
+Christopher Ireland, David Bowers, Michael Newton, and Kevin Waugh.
+\newblock A classification of object-relational impedance mismatch.
+\newblock In {\em First International Conference on Advances in Databases,
+  Knowledge, and Data Applications}, pages 36--43. IEEE, 2009.
+\newblock URL: \url{https://ieeexplore.ieee.org/document/4782514}.
+
+\bibitem{github}
+Jamie Juviler.
+\newblock What {I}s {G}ithub? ({A}nd {W}hat {I}s {I}t {U}sed {F}or?), 2021.
+\newblock Accessed: 2024-12-13.
+\newblock URL: \url{https://blog.hubspot.com/website/what-is-github-used-for}.
+
+\bibitem{jwt}
+JWT.
+\newblock Introduction to json web tokens, n.a.
+\newblock Accessed: 2024-12-13.
+\newblock URL: \url{https://jwt.io/introduction}.
+
+\bibitem{marcotte2011responsive}
+Ethan Marcotte.
+\newblock {\em Responsive Web Design}.
+\newblock A Book Apart, 2011.
+\newblock URL: \url{https://abookapart.com/products/responsive-web-design}.
+
+\bibitem{masse2011rest}
+Mark Masse.
+\newblock {\em REST API Design Rulebook: Designing Consistent RESTful Web
+  Service Interfaces}.
+\newblock O'Reilly Media, 2011.
+\newblock URL:
+  \url{https://www.oreilly.com/library/view/rest-api-design/9781449317904/}.
+
+\bibitem{mikowski2013spa}
+Michael~S. Mikowski and Josh~C. Powell.
+\newblock {\em Single Page Web Applications: JavaScript End-to-end}.
+\newblock Manning Publications, 2013.
+\newblock URL:
+  \url{https://www.manning.com/books/single-page-web-applications}.
+
+\bibitem{api_definition}
+MuleSoft.
+\newblock What is an {A}pi ({A}pplication {P}rogramming {I}nterface)?, n.d.
+\newblock Accessed: 2024-12-13.
+\newblock URL: \url{https://www.mulesoft.com/api/what-is-an-api}.
+
+\bibitem{developer_mozilla}
+Mozilla~Developer Network.
+\newblock Progressive enhancement, n.a.
+\newblock URL:
+  \url{https://developer.mozilla.org/en-US/docs/Glossary/Progressive_Enhancement}.
+
+\bibitem{nextjs}
+Next.js.
+\newblock Next.js, n.a.
+\newblock Accessed: 2024-12-13.
+\newblock URL: \url{https://nextjs.org/}.
+
+\bibitem{nist2022}
+National~Institute of~Standards and Technology.
+\newblock Cloud computing security reference architecture, 2022.
+\newblock URL: \url{https://csrc.nist.gov/publications/sp}.
+
+\bibitem{ilo2022}
+International~Labour Organization.
+\newblock The future of work in the transport sector, 2022.
+\newblock URL: \url{https://www.ilo.org/global/topics/future-of-work/}.
+
+\bibitem{imo2023}
+International~Maritime Organization.
+\newblock Facilitation of international maritime traffic, 2023.
+\newblock URL: \url{https://www.imo.org/en/OurWork/Facilitation/}.
+
+\bibitem{unido2022}
+United Nations Industrial~Development Organization.
+\newblock Supply chain management: Concepts and practice, 2022.
+\newblock URL: \url{https://www.unido.org/resources}.
+
+\bibitem{unido2023}
+United Nations Industrial~Development Organization.
+\newblock Inclusive and sustainable industrial development in the digital era,
+  2023.
+\newblock URL:
+  \url{https://www.unido.org/resources-publications-flagship-publications}.
+
+\bibitem{wco2023}
+World~Customs Organization.
+\newblock Global trade facilitation, 2023.
+\newblock URL: \url{http://www.wcoomd.org/}.
+
+\bibitem{wto2021}
+World~Trade Organization.
+\newblock E-commerce and digital trade, 2021.
+\newblock URL: \url{https://www.wto.org/english/tratop_e/ecom_e/ecom_e.htm}.
+
+\bibitem{wto2022}
+World~Trade Organization.
+\newblock World trade report 2022: Climate change and international trade,
+  2022.
+\newblock URL:
+  \url{https://www.wto.org/english/res_e/publications_e/wtr22_e.htm}.
+
+\bibitem{postgres}
+PostgreSQL.
+\newblock About, n.d.
+\newblock Accessed: 2024-12-13.
+\newblock URL: \url{https://www.postgresql.org/about/}.
+
+\bibitem{redis}
+Redis.
+\newblock Redis, n.a.
+\newblock Accessed: 2024-12-13.
+\newblock URL: \url{https://redis.io/docs/latest/}.
+
+\bibitem{richardson2018microservices}
+Chris Richardson.
+\newblock {\em Microservices Patterns: With Examples in Java}.
+\newblock Manning Publications, 2018.
+\newblock URL: \url{https://www.manning.com/books/microservices-patterns}.
+
+\bibitem{reactjs}
+Sanity.
+\newblock React.js overview, 2024.
+\newblock Accessed: 2024-12-13.
+\newblock URL: \url{https://www.sanity.io/glossary/react-js}.
+
+\bibitem{freight_forwarder_indeed}
+Indeed~Editorial Team.
+\newblock What is {F}reight {F}orwarding? {D}efinition, {B}enefits and {K}ey
+  {S}tages, 2024.
+\newblock Accessed: 2024-12-13.
+\newblock URL:
+  \url{https://www.indeed.com/career-advice/career-development/freight-forwarder-meaning}.
+
+\bibitem{what-is-jira}
+Jira Team.
+\newblock Welcome to {J}ira, n.d.
+\newblock Accessed: 2024-12-13.
+\newblock URL:
+  \url{https://www.atlassian.com/software/jira/guides/getting-started/introduction#what-is-jira-software}.
+
+\bibitem{spring_boot}
+Spring Team.
+\newblock Spring boot, n.a.
+\newblock URL: \url{https://spring.io/projects/spring-boot}.
+
+\bibitem{ts}
+Typescript.
+\newblock Typescript, n.a.
+\newblock Accessed: 2024-12-13.
+\newblock URL: \url{https://www.typescriptlang.org/}.
+
+\bibitem{itu2022}
+International~Telecommunication Union.
+\newblock Digital trends in transport and logistics, 2022.
+\newblock URL: \url{https://www.itu.int/en/publications/}.
+
+\end{thebibliography}

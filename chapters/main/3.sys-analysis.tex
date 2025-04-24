@@ -1,0 +1,483 @@
+\chapter{System Analysis}
+\section{Research on existing solutions}
+\subsection{Freightify}
+Freightify \cite{freightify} is a SaaS platform designed for freight forwarders to streamline their operations through rapid quote generation, digital storefront creation, and real-time vessel tracking capabilities, enabling forwarders to digitize their services and enhance customer experience through automated processes.
+
+\textbf{Key features of Freightify include:}
+\begin{itemize}
+    \item \textbf{Rate Procurement:} Centralized management of carrier rates from multiple sources
+    \item \textbf{Instant Quote Generation:} Automated calculation of shipping costs based on cargo details
+    \item \textbf{Track \& Trace:} Real-time shipment tracking capabilities
+    \item \textbf{Customer Portal:} Self-service options for clients to request quotes and track shipments
+    \item \textbf{API Integration:} Connectivity with existing systems and third-party platforms
+\end{itemize}
+
+\subsection{Phuong Nam Logistics}
+Phuong Nam Logistics Company is a comprehensive local logistics service provider that delivers a diverse portfolio of services, encompassing sea freight, air freight, and land transportation, complemented by value-added services including packaging, handling, customs clearance, and warehousing solutions.
+
+The company maintains established strategic partnerships with multiple shipping lines and airlines. Leveraging its experienced professional team, Phuong Nam Logistics consistently demonstrates commitment to understanding client and partner requirements, delivering optimized solutions aligned with their operational principle: "Efficient - Dedicated - Optimal."
+
+\textbf{Key operational features of Phuong Nam Logistics' digital platform include:}
+\begin{itemize}
+    \item \textbf{Global Freight Transportation:} Strategic partnerships with reputable carriers ensure secure and timely cargo delivery across international networks
+    \item \textbf{Warehousing Solutions:} Provision of modern storage facilities and inventory management systems tailored to meet diverse client requirements
+    \item \textbf{Shipment Visibility:} Implementation of real-time online tracking systems enabling comprehensive shipment status monitoring and transparency
+    \item \textbf{Documentation Management:} Handling of customs clearance, packaging, and other paperwork requirements
+    \item \textbf{Multi-modal Transport Options:} Offering sea freight, air freight, and land transportation services
+\end{itemize}
+
+\subsection{Cargologik}
+Cargologik is a SaaS solution that enables freight forwarders to streamline communication workflows and optimize operational efficiency through automated task management, centralized documentation, and simplified booking processes. The platform facilitates enhanced service delivery by allowing forwarders to shift focus from routine email management to core customer service requirements, while providing clients with streamlined access to critical shipment information and documentation.
+
+\textbf{Key features include:}
+\begin{itemize}
+    \item \textbf{Track and Trace:} With automated exception management and task queues
+    \item \textbf{Communication Management:} Continuous, seamless communication across multiple shipments
+    \item \textbf{Document Repository:} Critical document storage and management
+    \item \textbf{Simplified Booking:} Streamlined quotation and booking processes
+\end{itemize}
+\subsection{FreightFlex: Addressing Limitations of Existing Solutions}
+After analyzing the existing solutions in the freight forwarding management space, we identified several opportunities for enhancement that FreightFlex addresses:
+
+\begin{itemize}
+    \item \textbf{Enhanced User Interface and Experience:} While existing solutions offer functional interfaces, FreightFlex prioritizes intuitive design with modern UI/UX principles, reducing the learning curve for users across different technical backgrounds.
+    
+    \item \textbf{Customizable Landing Page Builder:} Unlike most existing solutions that offer limited branding options, FreightFlex provides a comprehensive landing page builder that enables freight forwarders to create professional, branded online presence without requiring technical expertise or additional web development costs.
+    
+    \item \textbf{Advanced Multi-tenant Architecture:} FreightFlex implements a robust schema-based multi-tenant architecture that ensures superior data isolation between companies while maintaining cost efficiency, allowing freight forwarding businesses of all sizes to benefit from enterprise-grade security.
+    
+    \item \textbf{Granular Permission System:} FreightFlex extends beyond basic role-based access control with a fine-grained permission system allowing administrators to precisely define staff roles and access levels, creating custom permission sets tailored to their specific organizational structure.
+\end{itemize}
+
+By addressing these limitations, FreightFlex aims to provide a comprehensive solution that enhances operational efficiency, improves customer experience, and enables freight forwarding companies to maintain competitiveness in an increasingly digital marketplace.
+\section{Introduction to the System}
+FreightFlex is a web-based system that helps freight forwarding companies manage their business online. The system uses a multi-tenant approach, which means multiple companies can use the same platform while keeping their data completely separate from each other.
+
+When a freight forwarding company subscribes to FreightFlex, they receive their own workspace with a unique web address. This workspace acts as their digital office where they can:
+\begin{itemize}
+    \item Create their company website landing page
+    \item Display their shipping services
+    \item Provide automatic price quotes to customers
+    \item Perform all essential operations typical of a freight forwarding application
+\end{itemize}
+\section{Actors and Roles}
+\subsection{Actors of the system}
+\begin{itemize}
+\item \textbf{Freight Forwarder:} The logistics company that arranges international cargo transportation. They manage shipping documentation, coordinate with carriers, and ensure smooth delivery from origin to destination.
+
+\item \textbf{Clients:} Businesses or individuals who need to ship cargo internationally. They use the freight forwarder's services to transport their goods and track shipment progress.
+
+\item \textbf{Service Providers:} Companies that provide transportation and related services, including:
+\begin{itemize}
+\item Shipping lines
+\item Airlines
+\item Trucking companies
+\item Warehouse operators
+\end{itemize}
+
+\item \textbf{System Administrator:} Technical staff who maintain the platform, manage user access, and provide support to ensure the system runs efficiently.
+
+\item \textbf{Regulatory Authorities:} Government bodies that oversee international trade and transportation, setting rules for customs, documentation, and safety standards.
+\end{itemize}
+\subsection{Roles of the system}
+\begin{itemize}
+    \item \textbf{Super Admin:} Each company will be provided with a Super Admin account, which has the following capabilities:
+    \begin{itemize}
+        \item Manage Users: Create or edit Client and Staff accounts, and assign permissions to them.
+        \item Create Admin Accounts: Create Admin accounts, which have the ability to create or edit Client and Staff accounts.
+        \item Exclusive Deletion Rights: Only the Super Admin account has the authority to delete Client, Staff, or Admin accounts.
+    \end{itemize}
+    \item \textbf{Staff:} Staff account can be created by Super Admin or Admin. Their capabilities depend on the assigned roles and include:
+    \begin{itemize}
+        \item Sales Staff: Request customers to confirm orders, place external orders with freight forwarders or brokers, and coordinate with carriers for returns and management of electronic shipping files.
+        \item Pricing Staff: Contact suppliers such as shipping lines or trucking companies to receive quotes for the sales team.
+        \item Logistics Operations Staff: Responsible for managing and coordinating issues related to the transportation of goods by road, such as trucks, container trucks, loading areas, loading/unloading goods, etc., or maritime issues, such as ship docking and departures.
+        \item Import/Export Documentation Manager: Fully responsible for all documents and paperwork related to the import/export activities of businesses specializing in this field. For example: arrival notices, packing lists, contracts, invoices, bills of lading, etc. Main areas of work include: export/import sea freight documentation, customs declaration documents, customs procedures, freight – logistics documentation, and international payment documents.
+        \item Accounting Staff: Manage costs and revenues, and prepare company reports.
+    \end{itemize}
+    \item \textbf{Client:} Client account can be created by Super Admin or Admin, which has the following capabilities:
+    \begin{itemize}
+        \item Create Quote Requests
+        \item View Rates
+        \item Track Shipment status in real-time
+    \end{itemize}
+\end{itemize}
+% \section{Functional and Non-Functional Requirements}
+% \subsection{Functional Requirements}
+% \subsubsection{Landing Page Management}
+% \begin{itemize}
+%     \item \textbf{Drag-and-Drop Editor:} Allow users to position and rearrange sections on landing pages via drag-and-drop.\\
+%     \textbf{Actor:} Admin
+%     \item \textbf{Theme Customization:} Support multiple color themes to style the landing pages.\\
+%     \textbf{Actor:} Admin
+%     \item Preview and Publish: Allow users to preview the landing page before publishing\\
+%     \textbf{Actor:} Admin
+% \end{itemize}
+% \subsubsection{Quotation Management}
+% \begin{itemize}
+%     \item \textbf{Client Quotation Request:} Clients can fill out a form with details to request a quote.\\
+%     \textbf{Actor:} Client
+%     \item \textbf{Quotation Approval by Staff:} Staff can review, approve, or reject quote requests.\\
+%     \textbf{Actor:} Staff
+%     \item \textbf{Client Booking:} Clients can book shipments based on the approved quotes.\\
+%     \textbf{Actor:} Client
+% \end{itemize}
+% \subsubsection{Shipment Management}
+% \begin{itemize}
+%     \item \textbf{Shipment Creation:} Staff can create shipments for booked quotes with shipment details (tracking number, route, timeline).\\
+%     \textbf{Actor:} Staff
+%     \item \textbf{Credit/Debit Note Management:} Staff can create and manage credit or debit notes associated with shipments.\\
+%     \textbf{Actor:} Staff
+%     \item \textbf{Invoice Generation:} Automatically generate invoices after shipment creation. \\
+%     \textbf{Actor:} Staff
+% \end{itemize}
+% \subsubsection{Tracking and Notifications}
+% \begin{itemize}
+%     \item \textbf{Shipment Tracking:} Allow clients to view real-time status updates on their shipments. \\
+%     \textbf{Actor:} Client
+%     \item \textbf{Notifications:} Notify clients about status changes in their shipment (e.g., "In Transit, " "Delivered").\\
+%     \textbf{Actor:} Client
+%     \item \textbf{Notifications:} Send reminders for payment deadlines or shipment approvals. \\
+%     \textbf{Actor:} Client
+% \end{itemize}
+% \subsubsection{User Management}
+% \begin{itemize}
+%     \item \textbf{Role Management:} Define roles for clients, staff, and administrators with different permissions. \\
+%     \textbf{Actor:} Admin
+%     \item \textbf{Account Registration and Management:} Allow Admin to register, manage profiles, and reset passwords.\\
+%     \textbf{Actor:} Admin
+% \end{itemize}
+% \subsection{Non-Functional Requirements}
+% \begin{itemize}
+% \item \textbf{Scalability:} The system should support multiple businesses (multi-tenant architecture) and scale to handle high traffic during peak times.
+% \item \textbf{Performance:} Page load times for both landing pages and internal dashboards should not exceed 3 seconds.
+% \item \textbf{Maintainability:} Use a modular codebase to facilitate updates and bug fixes.
+% \item \textbf{Usability:} Ensure the system is intuitive and user-friendly, with minimal training required for end users.
+% \item \textbf{Browser Compatibility:} The application should work seamlessly across major browsers (Chrome, Firefox, Safari, Edge).
+% \item \textbf{Localization:} Support multiple languages and regional settings for currency, date, and time formats.
+% \item \textbf{Extensibility:} Ensure the system can integrate with third-party logistics and payment platforms in the future.
+% \end{itemize}
+% \newpage
+\section{Usecase Diagram}
+\subsection{Usecase Diagram for Admin}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=10cm]{graphics/usecase/freight-flex-UC-Admin.png}
+    \caption{Usecase Diagram for Admin}
+    \label{fig:Usecase Diagram for Admin}
+\end{figure}
+
+\subsubsection{Landing Page Settings}
+\begin{table}[H]
+\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+\hline
+Usecase name     & Custom Landing Page                             \\ \hline
+Actor            & Admin                                           \\ \hline
+Description      & Custom Landing Page                             \\ \hline
+Preconditions &
+  \begin{tabular}[c]{@{}l@{}}1. Authorized with Super Admin Account.\\ 2. Actor is in Landing Page.\end{tabular} \\ \hline
+Postconditions   & Notification success or failed.                 \\ \hline
+Normal Flow &
+  \begin{tabular}[c]{@{}l@{}}1. Actor turns on edit mode.\\ 2. Actor upload Company logo.\\ 3. Actor choose color theme for each section.\\ 4. Actor choose charts to show.\\ 5. Actor drag and drop each section to suitable position.\\ 6. Actor preview changes.\end{tabular} \\ \hline
+Exception Flow   & 5a. Section size is not fit to desired position \\ \hline
+Alternative Flow &                                                 \\ \hline
+\end{tabularx}
+\caption{Custom Landing Page}
+\label{tab:custom-landing-page}
+\end{table}
+\subsubsection{System Settings}
+\begin{table}[H]
+\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+\hline
+Usecase name     & Setup Company Profile                   \\ \hline
+Actor            & Admin                                   \\ \hline
+Description      & Setup Company Profile                   \\ \hline
+Preconditions    & 1. Authorized with Super Admin Account. \\ \hline
+Postconditions   & Notification success or failed.         \\ \hline
+Normal Flow &
+  \begin{tabular}[c]{@{}l@{}}1. Actor go to Settings.\\ 2. Actor choose tab Company Profile.\\ 3. Actor upload Company logo.\\ 4. Actor fills required fields.\\ 5. Actor click on save button.\end{tabular} \\ \hline
+Exception Flow &
+  \begin{tabular}[c]{@{}l@{}}3a. Wrong file format.\\ 4a. Miss required fields.\\ 4b. Wrong field format.\end{tabular} \\ \hline
+Alternative Flow & 4c. Actor changes or removes data.      \\ \hline
+\end{tabularx}
+\caption{Company Profile Settings}
+\label{tab:company-profile-setting}
+\end{table}
+
+\begin{table}[H]
+\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+\hline
+Usecase name     & Create role                          \\ \hline
+Actor            & Admin                                \\ \hline
+Description      & Add role with permissions            \\ \hline
+Preconditions    & Authorized with Super Admin Account. \\ \hline
+Postconditions   & Show role details.                   \\ \hline
+Normal Flow &
+  \begin{tabular}[c]{@{}l@{}}1. Actor go to Settings.\\ 2. Actor choose tab Role.\\ 3. Actor choose add new button.\\ 4. Actor ticks the checkbox for permission\\ 5. Actor click on save button.\end{tabular} \\ \hline
+Exception Flow   &                                      \\ \hline
+Alternative Flow &                                      \\ \hline
+\end{tabularx}
+\caption{Create new role}
+\label{tab:create-role}
+\end{table}
+\subsubsection{Account Settings}
+\begin{table}[H]
+\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+\hline
+Usecase name     & Add staff account                           \\ \hline
+Actor            & Admin                                       \\ \hline
+Description      & Add staff account                           \\ \hline
+Preconditions    & Authorized with an Admin Privilege account. \\ \hline
+Postconditions   & Add account successful                      \\ \hline
+Normal Flow &
+  \begin{tabular}[c]{@{}l@{}}1. Actor go to Adminstrantions.\\ 2. Actor choose tab Staff.\\ 3. Actor choose create button.\\ 4. Actor fills required fields.\\ 5. Actor click on save button.\end{tabular} \\ \hline
+Exception Flow &
+  \begin{tabular}[c]{@{}l@{}}4a. Actor does not fill required fields.\\ Cannot save staff.\end{tabular} \\ \hline
+Alternative Flow &                                             \\ \hline
+\end{tabularx}
+\caption{Add new staff}
+\label{tab:add-staff}
+\end{table}
+
+\begin{table}[H]
+\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+\hline
+Usecase name     & Grant permissions for staff account         \\ \hline
+Actor            & Admin                                       \\ \hline
+Description      & Grant permissions for staff account         \\ \hline
+Preconditions    & Authorized with an Admin Privilege account. \\ \hline
+Postconditions   & Update account successful                   \\ \hline
+Normal Flow &
+  \begin{tabular}[c]{@{}l@{}}1. Actor go to Settings.\\ 2. Actor choose tab Role.\\ 3. Actor choose role to edit.\\ 4. Actor add account to role.\\ 5. Actor click on save button.\end{tabular} \\ \hline
+Exception Flow   &                                             \\ \hline
+Alternative Flow &                                             \\ \hline
+\end{tabularx}
+\caption{Grant permissions for staff}
+\label{tab:staff-permissions}
+\end{table}
+\subsubsection{Agent Settings}
+
+\begin{table}[H]
+\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+\hline
+Usecase name     & View agent details                       \\ \hline
+Actor            & Admin, Staff                             \\ \hline
+Description      & View agent details                       \\ \hline
+Preconditions    & Staff has view permission or Admin       \\ \hline
+Postconditions   & Display a detailed agent including rates \\ \hline
+Normal Flow & \begin{tabular}[c]{@{}l@{}}1. Actor go to Providers.\\ 2. Actor choose tab Agent.\\ 3. Actor choose Agent to view.\end{tabular} \\ \hline
+Exception Flow   & Actor does not have permission to view agent\\ \hline
+Alternative Flow &                                          \\ \hline
+\end{tabularx}
+\caption{View agent details}
+\label{tab:agent-detail}
+\end{table}
+
+\begin{table}[H]
+\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+\hline
+Usecase name     & Search agent                       \\ \hline
+Actor            & Admin, Staff                       \\ \hline
+Description      & Search agent                       \\ \hline
+Preconditions    & Staff has view permission or Admin \\ \hline
+Postconditions &
+  Display a paginated list of agents related to the search information. \\ \hline
+Normal Flow &
+  \begin{tabular}[c]{@{}l@{}}1. Actor go to Providers.\\ 2. Actor choose tab Agent.\\ 3. Actor enters information to search.\\ 4. Actor click search button.\end{tabular} \\ \hline
+Exception Flow   & Actor does not have permission to view agent \\ \hline
+Alternative Flow &                                    \\ \hline
+\end{tabularx}
+\caption{Search agent}
+\label{tab:agent-search}
+\end{table}
+
+\begin{table}[H]
+\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+\hline
+Usecase name     & Import agents using excel file          \\ \hline
+Actor            & Admin, Staff                            \\ \hline
+Description      & Import agents using excel file          \\ \hline
+Preconditions    & Staff has add agent permission or Admin \\ \hline
+Postconditions   & Display agent list after imported       \\ \hline
+Normal Flow &
+  \begin{tabular}[c]{@{}l@{}}1. Actor go to Providers.\\ 2. Actor choose tab Agent.\\ 3. Actor choose Upload excel file.\\ 4. Actor preview agent list imported from excel.\\ 5. Actor confirm to import agents.\end{tabular} \\ \hline
+Exception Flow &
+  \begin{tabular}[c]{@{}l@{}}4a. Actor does not have permission to add agents\\ 4b. Wrong data format.\end{tabular} \\ \hline
+Alternative Flow & 5a. Actor cancel to import              \\ \hline
+\end{tabularx}
+\caption{Import agent from excel}
+\label{tab:agent-import-excel}
+\end{table}
+
+
+\begin{table}[H]
+\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+\hline
+Usecase name     & Add single rate                        \\ \hline
+Actor            & Admin, Staff                           \\ \hline
+Description      & Add rate to the agent                  \\ \hline
+Preconditions    & Staff has add rate permission or Admin \\ \hline
+Postconditions   & Display rate in agent detail           \\ \hline
+Normal Flow &
+  \begin{tabular}[c]{@{}l@{}}1. Actor go to Rates.\\ 2. Actor choose tab Freight or Local Charges or Other Services.\\ 3. Actor clicks new button.\\ 4. Actor choose a provider.\\ 5. Actor fills required fields.\\ 6. Actor clicks save button.\end{tabular} \\ \hline
+Exception Flow &
+  \begin{tabular}[c]{@{}l@{}}3a. Actor does not have permission to edit agent\\ 5b. Actor does not fill required fields. Cannot save.\end{tabular} \\ \hline
+Alternative Flow &                                        \\ \hline
+\end{tabularx}
+\caption{Add single rate}
+\label{tab:agent-add-rate}
+\end{table}
+
+\subsection{Usecase Diagram for Staff}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=10cm]{graphics/usecase/freight-flex-UC-Staff.png}
+    \caption{Usecase Diagram for Staff}
+    \label{fig:Usecase Diagram for Staff}
+\end{figure}
+
+\subsubsection{Rate Settings}
+\begin{table}[H]
+\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+\hline
+Usecase name     & Unsubscribe rate change notification    \\ \hline
+Actor            & Client, Staff                           \\ \hline
+Description      & Unsubscribe rate change notification    \\ \hline
+Preconditions    & Client, Staff has view rates permission \\ \hline
+Postconditions   & Unsubscribe successful                  \\ \hline
+Normal Flow &
+  \begin{tabular}[c]{@{}l@{}}1. Actor go to Rates\\ 2. Actor choose existing rate.\\ 3. Actor choose unsubscribe button.\\ 4. Actor choose confirm button.\end{tabular} \\ \hline
+Exception Flow   &                                         \\ \hline
+Alternative Flow &                                         \\ \hline
+\end{tabularx}
+\caption{Unsubscribe rate change notification}
+\label{tab:rate-noti-unsubcribe}
+\end{table}
+
+\subsubsection{Quote Settings}
+\begin{table}[H]
+\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+\hline
+Usecase name     & View Quote Request list                    \\ \hline
+Actor            & Staff                                      \\ \hline
+Description      & View all quote requests.                   \\ \hline
+Preconditions    & Staff has view quote permission            \\ \hline
+Postconditions   & Display a paginated list of quote requests \\ \hline
+Normal Flow & \begin{tabular}[c]{@{}l@{}}1. Actor go to Quotations.\\ 2. Actor go to Quote Request tab.\end{tabular} \\ \hline
+Exception Flow   &                                            \\ \hline
+Alternative Flow &                                            \\ \hline
+\end{tabularx}
+\caption{View Quote Request list}
+\label{tab:quote-request-list}
+\end{table}
+
+\begin{table}[H]
+\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+\hline
+Usecase name     & View Quote Request detail       \\ \hline
+Actor            & Staff                           \\ \hline
+Description      & View quote request detail.      \\ \hline
+Preconditions    & Staff has view quote permission \\ \hline
+Postconditions   & Display quote request detail    \\ \hline
+Normal Flow & \begin{tabular}[c]{@{}l@{}}1. Actor go to Quotations.\\ 2. Actor go to Quote Request tab.\\ 3. Actor choose a quote request.\end{tabular} \\ \hline
+Exception Flow   &                                 \\ \hline
+Alternative Flow &                                 \\ \hline
+\end{tabularx}
+\caption{View Quote Request detail}
+\label{tab:quote-request-detail}
+\end{table}
+
+\begin{table}[H]
+\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+\hline
+Usecase name     & Change status of a quote request                                           \\ \hline
+Actor            & Staff                                                                      \\ \hline
+Description      & Change status of a quote request                                           \\ \hline
+Preconditions    & Staff has view and edit quote permission                                   \\ \hline
+Postconditions   & Update status successful                                                   \\ \hline
+Normal Flow &
+  \begin{tabular}[c]{@{}l@{}}1. Actor go to Quotations.\\ 2. Actor go to Quote Request tab.\\ 3. Actor choose a quote request.\\ 4. Actor choose status\\ 5. Actor choose update\end{tabular} \\ \hline
+Exception Flow   & 5a. Status changed failed because status must be changed level one by one. \\ \hline
+Alternative Flow &                                                                            \\ \hline
+\end{tabularx}
+\caption{Change quote request status}
+\label{tab:quote-request-status-change}
+\end{table}
+
+\begin{table}[H]
+\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+\hline
+Usecase name     & Create quote from request                        \\ \hline
+Actor            & Staff                                            \\ \hline
+Description      & Generate a quote from the quote request          \\ \hline
+Preconditions    & Staff has view, create and edit quote permission \\ \hline
+Postconditions   & Create quote successful                          \\ \hline
+Normal Flow &
+  \begin{tabular}[c]{@{}l@{}}1. Actor go to Quotations.\\ 2. Actor go to Quote Request tab.\\ 3. Actor choose a quote request.\\ 4. Actor choose create quote from request button.\\ 5. Actor choose confirm.\end{tabular} \\ \hline
+Exception Flow   &                                                  \\ \hline
+Alternative Flow &                                                  \\ \hline
+\end{tabularx}
+\caption{Create quote from request}
+\label{tab:quote-create-from-request}
+\end{table}
+
+\subsubsection{Shipment Settings}
+\begin{table}[H]
+\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+\hline
+Usecase name     & Add shipment               \\ \hline
+Actor            & Staff                      \\ \hline
+Description      & Add a shipment             \\ \hline
+Preconditions &
+  \begin{tabular}[c]{@{}l@{}}1. Staff has create shipment permission.\\ 2. A quote is created.\end{tabular} \\ \hline
+Postconditions   & Create shipment successful \\ \hline
+Normal Flow &
+  \begin{tabular}[c]{@{}l@{}}1. Actor go to Quotations.\\ 2. Actor go to Quote tab.\\ 3. Actor choose a quote not booked.\\ 4. Actor choose create shipment button.\\ 5. Actor update shipment information.\\ 6. Actor choose create.\end{tabular} \\ \hline
+Exception Flow   &                            \\ \hline
+Alternative Flow &                            \\ \hline
+\end{tabularx}
+\caption{Create shipment from quote}
+\label{tab:shipment-create-from-quote}
+\end{table}
+
+\subsection{Usecase Diagram for Client}
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=10cm]{graphics/usecase/freight-flex-UC-Client.png}
+    \caption{Usecase Diagram for Client}
+    \label{fig:Usecase Diagram for Client}
+\end{figure}
+
+\begin{table}[H]
+\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+\hline
+Usecase name     & View shipment status                   \\ \hline
+Actor            & Client                                 \\ \hline
+Description      & View shipment status                   \\ \hline
+Preconditions    & 1. Clien has view shipment permission. \\ \hline
+Postconditions   & Display shipment status detail         \\ \hline
+Normal Flow & \begin{tabular}[c]{@{}l@{}}1. Actor go to Shipments.\\ 2. Actor choose a shipment.\end{tabular} \\ \hline
+Exception Flow   &                                        \\ \hline
+Alternative Flow &                                        \\ \hline
+\end{tabularx}
+\caption{View shipment}
+\label{tab:shipment-view}
+\end{table}
+
+
+\begin{table}[H]
+\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+\hline
+Usecase name     & Seach shipment                                                          \\ \hline
+Actor            & Client                                                                  \\ \hline
+Description      & View a paginated list of shipments related to the search information    \\ \hline
+Preconditions    & 1. Clien has view shipment permission.                                  \\ \hline
+Postconditions   & Display a paginated list of shipments related to the search information \\ \hline
+Normal Flow &
+  \begin{tabular}[c]{@{}l@{}}1. Actor go to Shipments.\\ 2. Actor clicks to Search.\\ 3. Actor enters information to search.\\ 4. Actor clicks search button\end{tabular} \\ \hline
+Exception Flow   & Search keyword does not match any shipments                             \\ \hline
+Alternative Flow &                                                                         \\ \hline
+\end{tabularx}
+\caption{Seach shipment}
+\label{tab:shipment-search}
+\end{table}
