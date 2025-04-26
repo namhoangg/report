@@ -109,6 +109,13 @@ GeeksforGeeks.
 \newblock Accessed: 2024-12-13.
 \newblock URL: \url{https://www.geeksforgeeks.org/ant-design/}.
 
+\bibitem{google_page_speed}
+Google.
+\newblock Pagespeed insights, n.d.
+\newblock Accessed: 2024-12-13.
+\newblock URL:
+  \url{https://developers.google.com/speed/docs/insights/v5/about}.
+
 \bibitem{usability2023}
 Nielsen~Norman Group.
 \newblock Ux guidelines for enterprise applications, 2023.
@@ -266,6 +273,20 @@ Jira Team.
 \newblock Accessed: 2024-12-13.
 \newblock URL:
   \url{https://www.atlassian.com/software/jira/guides/getting-started/introduction#what-is-jira-software}.
+
+\bibitem{katalon_software_testing}
+Katalon Team.
+\newblock What is software testing? definition, types, and tools, n.d.
+\newblock Accessed: 2024-12-13.
+\newblock URL:
+  \url{https://katalon.com/resources-center/blog/software-testing}.
+
+\bibitem{postman_api_testing}
+Postman Team.
+\newblock Get started in postman, n.d.
+\newblock Accessed: 2024-12-13.
+\newblock URL:
+  \url{https://learning.postman.com/docs/getting-started/overview/}.
 
 \bibitem{spring_boot}
 Spring Team.

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.20)  24 APR 2025 14:09
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.20)  27 APR 2025 02:33
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -884,7 +884,7 @@ File: puenc.def 2024-11-05 v7.01l Hyperref: PDF Unicode definition (HO)
 Now handling font encoding PU ...
 ... no UTF-8 mapping file for font encoding PU
 )
-Package hyperref Info: Option `draft' set `true' on input line 4040.
+Package hyperref Info: Option `final' set `true' on input line 4040.
 Package hyperref Info: Hyper figures OFF on input line 4157.
 Package hyperref Info: Link nesting OFF on input line 4162.
 Package hyperref Info: Hyper index ON on input line 4165.
@@ -1174,18 +1174,16 @@ Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: float package is loaded.
 Package caption Info: hyperref package is loaded.
 Package caption Info: End \AtBeginDocument code.
-
-
-Package hyperref Warning: Draft mode on.
-
 Package hyperref Info: Link coloring ON on input line 56.
-<graphics/hcmut.png, id=4, 291.0072pt x 293.898pt>
-LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 57.
-(C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/vntex\t5cmtt.fd
-File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
-)
-LaTeX Font Info:    Font shape `T5/cmtt/bx/n' in size <15> not available
-(Font)              Font shape `T5/cmtt/m/n' tried instead on input line 57.
+ (thesis.out) (thesis.out)
+\@outlinefile=\write5
+\openout5 = `thesis.out'.
+
+<graphics/hcmut.png, id=514, 291.0072pt x 293.898pt>
+File: graphics/hcmut.png Graphic file (type png)
+<use graphics/hcmut.png>
+Package pdftex.def Info: graphics/hcmut.png  used on input line 57.
+(pdftex.def)             Requested size: 116.4008pt x 117.5571pt.
 LaTeX Font Info:    Calculating math sizes for size <20> on input line 57.
 LaTeX Font Info:    Trying to load font information for OT1+ztmcm on input line 57.
  (C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/psnfss\ot1ztmcm.fd
@@ -1213,17 +1211,21 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.80011> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12.00012> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 57.
-<graphics/signature.png, id=6, 334.75063pt x 209.28188pt>
+<graphics/signature.png, id=516, 334.75063pt x 209.28188pt>
+File: graphics/signature.png Graphic file (type png)
+<use graphics/signature.png>
+Package pdftex.def Info: graphics/signature.png  used on input line 57.
+(pdftex.def)             Requested size: 44.65816pt x 27.92244pt.
 
 Overfull \hbox (34.19168pt too wide) in paragraph at lines 57--57
-[]\T5/ptm/b/n/15 SUPERVISOR(s): [] |
+[]\T5/ptm/b/n/15 SUPERVISOR(s): [] 
  []
 
 
 
 [1
 
-{C:/Users/ADMIN/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/vntex/t5.enc}]
+{C:/Users/ADMIN/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/vntex/t5.enc} <./graphics/hcmut.png> <./graphics/signature.png>]
 
 [2
 
@@ -1332,9 +1334,9 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <7> not available
 
 [6]
 
-[7])
+[7]
 
-[8]
+[8])
 
 [9] (thesis.lot
 
@@ -1355,13 +1357,23 @@ LaTeX Font Info:    Trying to load font information for TS1+ptm on input line 12
 File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 )
 
-[1
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.20 \section
+             {Research Objectives} [1
 
 
 
 {C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/base/8r.enc}]
 
-[2]
+
+pdfTeX warning (ext4): destination with the same identifier (name{page.2}) has been already used, duplicate ignored
+<to be read again> 
+                   \relax 
+l.45     \item \textbf
+                      {Cost Reduction}: Digital automation reduces operation... [2]
 
 [3])
 
@@ -1376,10 +1388,14 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 
 
 ]
-<graphics/background-knowledge/monolithic-architecture.png, id=72, 472.76625pt x 387.69844pt>
+<graphics/background-knowledge/monolithic-architecture.png, id=843, 472.76625pt x 387.69844pt>
+File: graphics/background-knowledge/monolithic-architecture.png Graphic file (type png)
+<use graphics/background-knowledge/monolithic-architecture.png>
+Package pdftex.def Info: graphics/background-knowledge/monolithic-architecture.png  used on input line 29.
+(pdftex.def)             Requested size: 426.79134pt x 350.00203pt.
 
 
-[6]
+[6 <./graphics/background-knowledge/monolithic-architecture.png>]
 
 [7]
 
@@ -1387,14 +1403,14 @@ File: ts1ptm.fd 2001/06/04 font definitions for TS1/ptm.
 
 [9]
 Overfull \hbox (1.18324pt too wide) in paragraph at lines 151--152
-[]\T5/ptm/b/n/12 Introduction: \T5/ptm/m/n/12 HTML (Hy-per-Text Markup Lan-guage)$[]$, CSS (Cas-cad-ing Style Sheets)$[]$,|
+[]\T5/ptm/b/n/12 Introduction: \T5/ptm/m/n/12 HTML (Hy-per-Text Markup Lan-guage)$[]$, CSS (Cas-cad-ing Style Sheets)$[]$,
  []
 
 
 
 [10]
 Overfull \hbox (21.72266pt too wide) in paragraph at lines 180--181
-[]\T5/ptm/b/n/12 Introduction: \T5/ptm/m/n/12 Type-Script$[]$ is a strongly typed pro-gram-ming lan-guage that builds on JavaScript|
+[]\T5/ptm/b/n/12 Introduction: \T5/ptm/m/n/12 Type-Script$[]$ is a strongly typed pro-gram-ming lan-guage that builds on JavaScript
  []
 
 
@@ -1431,7 +1447,7 @@ Overfull \hbox (21.72266pt too wide) in paragraph at lines 180--181
 
 ]
 Overfull \hbox (10.28387pt too wide) in paragraph at lines 18--19
-\T5/ptm/m/n/12 air-lines. Lever-ag-ing its ex-pe-ri-enced pro-fes-sional team, Phuong Nam Lo-gis-tics con-sis-tently demon-|
+\T5/ptm/m/n/12 air-lines. Lever-ag-ing its ex-pe-ri-enced pro-fes-sional team, Phuong Nam Lo-gis-tics con-sis-tently demon-
  []
 
 
@@ -1440,7 +1456,7 @@ Overfull \hbox (10.28387pt too wide) in paragraph at lines 18--19
 
 [24]
 Overfull \hbox (17.88872pt too wide) in paragraph at lines 56--58
-[]\T5/ptm/m/n/12 When a freight for-ward-ing com-pany sub-scribes to Freight-Flex, they re-ceive their own workspace|
+[]\T5/ptm/m/n/12 When a freight for-ward-ing com-pany sub-scribes to Freight-Flex, they re-ceive their own workspace
  []
 
 
@@ -1448,12 +1464,16 @@ Overfull \hbox (17.88872pt too wide) in paragraph at lines 56--58
 [25]
 
 [26]
-<graphics/usecase/freight-flex-UC-Admin.png, id=139, 1448.41125pt x 2048.65375pt>
+<graphics/usecase/freight-flex-UC-Admin.png, id=976, 1448.41125pt x 2048.65375pt>
+File: graphics/usecase/freight-flex-UC-Admin.png Graphic file (type png)
+<use graphics/usecase/freight-flex-UC-Admin.png>
+Package pdftex.def Info: graphics/usecase/freight-flex-UC-Admin.png  used on input line 165.
+(pdftex.def)             Requested size: 284.52756pt x 402.43994pt.
 
 
 [27]
 
-[28]
+[28 <./graphics/usecase/freight-flex-UC-Admin.png>]
 
 [29]
 
@@ -1462,22 +1482,30 @@ Overfull \hbox (17.88872pt too wide) in paragraph at lines 56--58
 [31]
 
 [32]
-<graphics/usecase/freight-flex-UC-Staff.png, id=159, 1426.32875pt x 2304.61pt>
+<graphics/usecase/freight-flex-UC-Staff.png, id=1003, 1426.32875pt x 2304.61pt>
+File: graphics/usecase/freight-flex-UC-Staff.png Graphic file (type png)
+<use graphics/usecase/freight-flex-UC-Staff.png>
+Package pdftex.def Info: graphics/usecase/freight-flex-UC-Staff.png  used on input line 334.
+(pdftex.def)             Requested size: 284.52756pt x 459.71822pt.
 
 
 [33]
 
-[34]
+[34 <./graphics/usecase/freight-flex-UC-Staff.png>]
 
 [35]
 
 [36]
-<graphics/usecase/freight-flex-UC-Client.png, id=173, 1030.85126pt x 1336.995pt>
+<graphics/usecase/freight-flex-UC-Client.png, id=1022, 1030.85126pt x 1336.995pt>
+File: graphics/usecase/freight-flex-UC-Client.png Graphic file (type png)
+<use graphics/usecase/freight-flex-UC-Client.png>
+Package pdftex.def Info: graphics/usecase/freight-flex-UC-Client.png  used on input line 446.
+(pdftex.def)             Requested size: 284.52756pt x 369.01102pt.
 
 
 [37])
 
-[38]
+[38 <./graphics/usecase/freight-flex-UC-Client.png>]
 
 [39]
 \openout2 = `chapters/main/4.sys-design.aux'.
@@ -1492,10 +1520,14 @@ Overfull \hbox (17.88872pt too wide) in paragraph at lines 56--58
 ]
 
 [41]
-<graphics/DB/freight-flex-ERD.drawio.png, id=190, 1926.44719pt x 3209.23969pt>
+<graphics/DB/freight-flex-ERD.drawio.png, id=1045, 1926.44719pt x 3209.23969pt>
+File: graphics/DB/freight-flex-ERD.drawio.png Graphic file (type png)
+<use graphics/DB/freight-flex-ERD.drawio.png>
+Package pdftex.def Info: graphics/DB/freight-flex-ERD.drawio.png  used on input line 7.
+(pdftex.def)             Requested size: 332.34189pt x 553.66171pt.
 
 
-[42]
+[42 <./graphics/DB/freight-flex-ERD.drawio.png>]
 
 [43]
 
@@ -1503,21 +1535,21 @@ Overfull \hbox (17.88872pt too wide) in paragraph at lines 56--58
 
 [45]
 Overfull \hbox (5.94975pt too wide) in paragraph at lines 675--675
-[]|\T5/ptm/m/n/12 resource_action_id| |
+[]|\T5/ptm/m/n/12 resource_action_id| 
  []
 
 
 
 [46]
 Overfull \hbox (27.50174pt too wide) in paragraph at lines 748--748
-[]|\T5/ptm/m/n/12 contact_person_info_id| |
+[]|\T5/ptm/m/n/12 contact_person_info_id| 
  []
 
 
 
 [47]
 Overfull \hbox (27.50174pt too wide) in paragraph at lines 768--768
-[]|\T5/ptm/m/n/12 contact_person_info_id| |
+[]|\T5/ptm/m/n/12 contact_person_info_id| 
  []
 
 
@@ -1531,12 +1563,20 @@ Overfull \hbox (27.50174pt too wide) in paragraph at lines 768--768
 [51]
 
 [52]
-<graphics/sys-design/system-architecture.png, id=225, 723.45282pt x 368.87813pt>
+<graphics/sys-design/system-architecture.png, id=1092, 723.45282pt x 368.87813pt>
+File: graphics/sys-design/system-architecture.png Graphic file (type png)
+<use graphics/sys-design/system-architecture.png>
+Package pdftex.def Info: graphics/sys-design/system-architecture.png  used on input line 949.
+(pdftex.def)             Requested size: 426.79134pt x 217.61368pt.
 
 
-[53]
+[53 <./graphics/sys-design/system-architecture.png>]
+LaTeX Font Info:    Trying to load font information for T5+cmtt on input line 955.
+ (C:\Users\ADMIN\AppData\Local\Programs\MiKTeX\tex/latex/vntex\t5cmtt.fd
+File: t5cmtt.fd 1999/05/25 v2.5h Standard LaTeX font definitions
+)
 Overfull \hbox (8.90388pt too wide) in paragraph at lines 965--966
-\T5/ptm/m/n/12 which ef-fi-ciently han-dles mul-ti-ple freight for-ward-ing com-pa-nies (ten-ants) within a sin-gle database|
+\T5/ptm/m/n/12 which ef-fi-ciently han-dles mul-ti-ple freight for-ward-ing com-pa-nies (ten-ants) within a sin-gle database
  []
 
 
@@ -1557,31 +1597,39 @@ Overfull \hbox (8.90388pt too wide) in paragraph at lines 965--966
 
 ]
 Overfull \hbox (1.01788pt too wide) in paragraph at lines 20--21
-\T5/ptm/m/n/12 per-for-mance, en-hanced SEO ca-pa-bil-i-ties, and stream-lined ap-pli-ca-tion de-vel-op-ment. These|
+\T5/ptm/m/n/12 per-for-mance, en-hanced SEO ca-pa-bil-i-ties, and stream-lined ap-pli-ca-tion de-vel-op-ment. These
  []
 
 
 
 [58]
-<graphics/sys-design/frontend_folder_structure_1.png, id=245, 161.85469pt x 284.56313pt>
+<graphics/sys-design/frontend_folder_structure_1.png, id=1120, 161.85469pt x 284.56313pt>
+File: graphics/sys-design/frontend_folder_structure_1.png Graphic file (type png)
+<use graphics/sys-design/frontend_folder_structure_1.png>
+Package pdftex.def Info: graphics/sys-design/frontend_folder_structure_1.png  used on input line 88.
+(pdftex.def)             Requested size: 136.57462pt x 240.12993pt.
 
 
 [59]
 
-[60]
+[60 <./graphics/sys-design/frontend_folder_structure_1.png>]
 Overfull \hbox (5.86824pt too wide) in paragraph at lines 109--110
-[]\T5/ptm/b/n/12 util \T5/ptm/m/n/12 - Pro-vides general-purpose util-ity classes that sup-port var-i-ous op-er-a-tions through-|
+[]\T5/ptm/b/n/12 util \T5/ptm/m/n/12 - Pro-vides general-purpose util-ity classes that sup-port var-i-ous op-er-a-tions through-
  []
 
-<graphics/sys-design/backend_folder_structure_2.png, id=253, 237.13594pt x 420.06938pt>
+<graphics/sys-design/backend_folder_structure_2.png, id=1131, 237.13594pt x 420.06938pt>
+File: graphics/sys-design/backend_folder_structure_2.png Graphic file (type png)
+<use graphics/sys-design/backend_folder_structure_2.png>
+Package pdftex.def Info: graphics/sys-design/backend_folder_structure_2.png  used on input line 143.
+(pdftex.def)             Requested size: 136.57462pt x 241.94183pt.
 
 
 [61])
 
-[62]
+[62 <./graphics/sys-design/backend_folder_structure_2.png>]
 \openout2 = `chapters/main/6.chapter6.aux'.
 
- (chapters/main/6.chapter6.tex)
+ (chapters/main/6.chapter6.tex
 
 [63
 
@@ -1589,31 +1637,52 @@ Overfull \hbox (5.86824pt too wide) in paragraph at lines 109--110
 
 
 ]
+<graphics/chapter6/postmain.png, id=1150, 1923.43594pt x 1017.04968pt>
+File: graphics/chapter6/postmain.png Graphic file (type png)
+<use graphics/chapter6/postmain.png>
+Package pdftex.def Info: graphics/chapter6/postmain.png  used on input line 47.
+(pdftex.def)             Requested size: 426.79134pt x 225.67596pt.
+
+
+[64]
+
+[65 <./graphics/chapter6/postmain.png>]
+<graphics/chapter6/quotes.png, id=1165, 1924.18875pt x 906.38625pt>
+File: graphics/chapter6/quotes.png Graphic file (type png)
+<use graphics/chapter6/quotes.png>
+Package pdftex.def Info: graphics/chapter6/quotes.png  used on input line 67.
+(pdftex.def)             Requested size: 426.79134pt x 201.03757pt.
+<graphics/chapter6/staff_before.png, id=1166, 1926.44719pt x 908.64468pt>
+File: graphics/chapter6/staff_before.png Graphic file (type png)
+<use graphics/chapter6/staff_before.png>
+Package pdftex.def Info: graphics/chapter6/staff_before.png  used on input line 74.
+(pdftex.def)             Requested size: 426.79134pt x 201.3028pt.
+
+
+[66 <./graphics/chapter6/quotes.png> <./graphics/chapter6/staff_before.png>])
+
+[67]
 \openout2 = `chapters/main/7.final.aux'.
 
  (chapters/main/7.final.tex
 
-[64
+[68
 
-
-
-
-])
-
-[65] (thesis.bbl
-
-[66
 
 
 
 ]
+
+[69])
+
+[70] (thesis.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 25--29
 []\T5/ptm/m/n/12 European Com-mis-sion.  Dig-i-tal trans-port and lo-gis-tics fo-rum,
  []
 
 
 Underfull \hbox (badness 10000) in paragraph at lines 25--29
-\T5/ptm/m/n/12 2023.  URL: $\T5/cmtt/m/n/12 https : / / transport . ec . europa . eu / transport-[]themes /
+\T5/ptm/m/n/12 2023.  URL: [][]$\T5/cmtt/m/n/12 https : / / transport . ec . europa . eu / transport-[]themes /
  []
 
 
@@ -1623,84 +1692,94 @@ Underfull \hbox (badness 2837) in paragraph at lines 55--58
 
 
 Underfull \hbox (badness 5359) in paragraph at lines 55--58
-\T5/ptm/m/n/12 for-ma-tion of lo-gis-tics, 2021.  URL: $\T5/cmtt/m/n/12 https : / / www . oecd . org / trade / topics /
+\T5/ptm/m/n/12 for-ma-tion of lo-gis-tics, 2021.  URL: [][]$\T5/cmtt/m/n/12 https : / / www . oecd . org / trade / topics /
  []
 
 
-
-[67]
-Underfull \hbox (badness 2582) in paragraph at lines 60--63
-\T5/ptm/m/n/12 tain-able trade fa-cil-i-ta-tion, 2021.  URL: $\T5/cmtt/m/n/12 https : / / unece . org / trade / uncefact /
- []
-
-
-Underfull \hbox (badness 10000) in paragraph at lines 123--128
-\T5/cmtt/m/n/12 https : / / www . atlassian . com / microservices / microservices-[]architecture /
- []
-
-
-
-[68]
-Underfull \hbox (badness 1400) in paragraph at lines 208--213
-\T5/ptm/m/n/12 dus-trial de-vel-op-ment in the dig-i-tal era, 2023.  URL: $\T5/cmtt/m/n/12 https : / / www . unido . org /
- []
-
-
-
-[69]
-Underfull \hbox (badness 10000) in paragraph at lines 264--269
-\T5/cmtt/m/n/12 atlassian . com / software / jira / guides / getting-[]started / introduction #
- []
-
-
-Underfull \hbox (badness 3568) in paragraph at lines 276--280
-[]\T5/ptm/m/n/12 Typescript.  Type-script, n.a.  Ac-cessed: 2024-12-13.  URL: $\T5/cmtt/m/n/12 https : / / www .
- []
-
-)
-
-[70]
-\openout2 = `chapters/back/task-assigment.aux'.
-
- (chapters/back/task-assigment.tex)
 
 [71
 
 
-]
-
-[72
-
-
 
 ]
-\tf@toc=\write5
-\openout5 = `thesis.toc'.
+Underfull \hbox (badness 2582) in paragraph at lines 60--63
+\T5/ptm/m/n/12 tain-able trade fa-cil-i-ta-tion, 2021.  URL: [][]$\T5/cmtt/m/n/12 https : / / unece . org / trade / uncefact /
+ []
 
-\tf@lot=\write6
-\openout6 = `thesis.lot'.
 
-\tf@lof=\write7
-\openout7 = `thesis.lof'.
+Underfull \hbox (badness 10000) in paragraph at lines 130--135
+[][]$\T5/cmtt/m/n/12 https : / / www . atlassian . com / microservices / microservices-[]architecture /
+ []
+
+
+
+[72]
+
+[73]
+Underfull \hbox (badness 1400) in paragraph at lines 215--220
+\T5/ptm/m/n/12 dus-trial de-vel-op-ment in the dig-i-tal era, 2023.  URL: [][]$\T5/cmtt/m/n/12 https : / / www . unido . org /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 271--276
+\T5/cmtt/m/n/12 atlassian . com / software / jira / guides / getting-[]started / introduction #
+ []
+
+
+Underfull \hbox (badness 3568) in paragraph at lines 297--301
+[]\T5/ptm/m/n/12 Typescript.  Type-script, n.a.  Ac-cessed: 2024-12-13.  URL: [][]$\T5/cmtt/m/n/12 https : / / www .
+ []
+
+
+
+[74])
+
+[75]
+\openout2 = `chapters/back/task-assigment.aux'.
+
+ (chapters/back/task-assigment.tex
+
+[76
+
+
+])
+
+[77]
+
+[78
+
+
+
+]
+\tf@toc=\write6
+\openout6 = `thesis.toc'.
+
+\tf@lot=\write7
+\openout7 = `thesis.lot'.
+
+\tf@lof=\write8
+\openout8 = `thesis.lof'.
 
  (thesis.aux (chapters/front/declaration.aux) (chapters/front/acknowledge.aux) (chapters/front/abstract.aux) (chapters/front/chapter-summary.aux) (chapters/main/1.overview.aux) (chapters/main/2.background-knowledge.aux) (chapters/main/3.sys-analysis.aux) (chapters/main/4.sys-design.aux) (chapters/main/5.implementation.aux) (chapters/main/6.chapter6.aux) (chapters/main/7.final.aux) (chapters/back/task-assigment.aux))
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2020/03/25>
  ***********
+Package rerunfilecheck Info: File `thesis.out' has not changed.
+(rerunfilecheck)             Checksum: 8359A16B0274E6A3598E25EB0629DC23;20202.
  ) 
 Here is how much of TeX's memory you used:
- 30572 strings out of 469959
- 574083 string characters out of 5469834
- 991100 words of memory out of 5000000
- 56796 multiletter control sequences out of 15000+600000
- 669268 words of font info for 93 fonts, out of 8000000 for 9000
+ 31084 strings out of 469959
+ 582627 string characters out of 5469834
+ 991487 words of memory out of 5000000
+ 56975 multiletter control sequences out of 15000+600000
+ 668957 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,18n,107p,583b,721s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,18n,107p,583b,777s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/urwvn/utmb8v.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/urwvn/utmr8v.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/urwvn/utmri8v.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vntt12.pfb>
-Output written on thesis.pdf (86 pages, 222655 bytes).
+Output written on thesis.pdf (92 pages, 2230580 bytes).
 PDF statistics:
- 320 PDF objects out of 1000 (max. 8388607)
- 0 named destinations out of 1000 (max. 500000)
- 63 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1426 PDF objects out of 1440 (max. 8388607)
+ 328 named destinations out of 1000 (max. 500000)
+ 1094 words of extra memory for PDF output out of 10000 (max. 10000000)
 

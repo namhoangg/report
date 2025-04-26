@@ -114,15 +114,19 @@
 \contentsline {section}{\numberline {5.3}Interfaces implementation}{62}{section.5.3}%
 \contentsline {chapter}{\chapternumberline {6}Deployment, Testing and System Evaluation}{63}{chapter.6}%
 \contentsline {section}{\numberline {6.1}System Testing}{63}{section.6.1}%
-\contentsline {subsection}{\numberline {6.1.1}API Testing}{63}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Web Interface Testing}{63}{subsection.6.1.2}%
-\contentsline {section}{\numberline {6.2}Deployment}{63}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Frontend Deployment}{63}{subsection.6.2.1}%
-\contentsline {subsection}{\numberline {6.2.2}Backend Deployment}{63}{subsection.6.2.2}%
-\contentsline {section}{\numberline {6.3}System Evaluation}{63}{section.6.3}%
-\contentsline {chapter}{\chapternumberline {7}Summary, Evaluation and Development Direction}{65}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Summary}{65}{section.7.1}%
-\contentsline {section}{\numberline {7.2}System Evaluation}{65}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Future Development Direction}{65}{section.7.3}%
-\contentsline {chapter}{References}{67}{chapter*.56}%
-\contentsline {appendix}{\chapternumberline {A}Task Assignment}{71}{appendix.A}%
+\contentsline {paragraph}{Why Testing Matters}{63}{section*.56}%
+\contentsline {paragraph}{Main Testing Categories}{63}{section*.57}%
+\contentsline {paragraph}{Common Testing Approaches}{64}{section*.58}%
+\contentsline {subsection}{\numberline {6.1.1}API Testing}{64}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Web Interface Testing}{65}{subsection.6.1.2}%
+\contentsline {section}{\numberline {6.2}Deployment}{65}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Frontend Deployment}{65}{subsection.6.2.1}%
+\contentsline {subsection}{\numberline {6.2.2}Backend Deployment}{65}{subsection.6.2.2}%
+\contentsline {section}{\numberline {6.3}System Evaluation}{65}{section.6.3}%
+\contentsline {subsection}{\numberline {6.3.1}Evaluation results}{66}{subsection.6.3.1}%
+\contentsline {chapter}{\chapternumberline {7}Summary, Evaluation and Development Direction}{69}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Achieved outcomes}{69}{section.7.1}%
+\contentsline {section}{\numberline {7.2}System Evaluation}{69}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Future Development Direction}{70}{section.7.3}%
+\contentsline {chapter}{References}{71}{chapter*.62}%
+\contentsline {appendix}{\chapternumberline {A}Task Assignment}{77}{appendix.A}%
