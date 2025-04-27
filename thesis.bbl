@@ -274,6 +274,13 @@ Jira Team.
 \newblock URL:
   \url{https://www.atlassian.com/software/jira/guides/getting-started/introduction#what-is-jira-software}.
 
+\bibitem{katalon_software_testing_intro}
+Katalon Team.
+\newblock Introduction to web testing in katalon studio, n.d.
+\newblock Accessed: 2024-12-13.
+\newblock URL:
+  \url{https://docs.katalon.com/katalon-studio/get-started/supported-applications-under-test-aut/introduction-to-web-testing-in-katalon-studio}.
+
 \bibitem{katalon_software_testing}
 Katalon Team.
 \newblock What is software testing? definition, types, and tools, n.d.

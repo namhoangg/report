@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.20)  27 APR 2025 02:33
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (MiKTeX 25.3) (preloaded format=pdflatex 2025.4.20)  27 APR 2025 19:23
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1179,7 +1179,7 @@ Package hyperref Info: Link coloring ON on input line 56.
 \@outlinefile=\write5
 \openout5 = `thesis.out'.
 
-<graphics/hcmut.png, id=514, 291.0072pt x 293.898pt>
+<graphics/hcmut.png, id=518, 291.0072pt x 293.898pt>
 File: graphics/hcmut.png Graphic file (type png)
 <use graphics/hcmut.png>
 Package pdftex.def Info: graphics/hcmut.png  used on input line 57.
@@ -1211,7 +1211,7 @@ LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <14.80011> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 57.
 LaTeX Font Info:    Font shape `OT1/ptm/bx/n' in size <12.00012> not available
 (Font)              Font shape `OT1/ptm/b/n' tried instead on input line 57.
-<graphics/signature.png, id=516, 334.75063pt x 209.28188pt>
+<graphics/signature.png, id=520, 334.75063pt x 209.28188pt>
 File: graphics/signature.png Graphic file (type png)
 <use graphics/signature.png>
 Package pdftex.def Info: graphics/signature.png  used on input line 57.
@@ -1388,7 +1388,7 @@ l.45     \item \textbf
 
 
 ]
-<graphics/background-knowledge/monolithic-architecture.png, id=843, 472.76625pt x 387.69844pt>
+<graphics/background-knowledge/monolithic-architecture.png, id=872, 472.76625pt x 387.69844pt>
 File: graphics/background-knowledge/monolithic-architecture.png Graphic file (type png)
 <use graphics/background-knowledge/monolithic-architecture.png>
 Package pdftex.def Info: graphics/background-knowledge/monolithic-architecture.png  used on input line 29.
@@ -1464,7 +1464,7 @@ Overfull \hbox (17.88872pt too wide) in paragraph at lines 56--58
 [25]
 
 [26]
-<graphics/usecase/freight-flex-UC-Admin.png, id=976, 1448.41125pt x 2048.65375pt>
+<graphics/usecase/freight-flex-UC-Admin.png, id=1005, 1448.41125pt x 2048.65375pt>
 File: graphics/usecase/freight-flex-UC-Admin.png Graphic file (type png)
 <use graphics/usecase/freight-flex-UC-Admin.png>
 Package pdftex.def Info: graphics/usecase/freight-flex-UC-Admin.png  used on input line 165.
@@ -1482,7 +1482,7 @@ Package pdftex.def Info: graphics/usecase/freight-flex-UC-Admin.png  used on inp
 [31]
 
 [32]
-<graphics/usecase/freight-flex-UC-Staff.png, id=1003, 1426.32875pt x 2304.61pt>
+<graphics/usecase/freight-flex-UC-Staff.png, id=1032, 1426.32875pt x 2304.61pt>
 File: graphics/usecase/freight-flex-UC-Staff.png Graphic file (type png)
 <use graphics/usecase/freight-flex-UC-Staff.png>
 Package pdftex.def Info: graphics/usecase/freight-flex-UC-Staff.png  used on input line 334.
@@ -1496,7 +1496,7 @@ Package pdftex.def Info: graphics/usecase/freight-flex-UC-Staff.png  used on inp
 [35]
 
 [36]
-<graphics/usecase/freight-flex-UC-Client.png, id=1022, 1030.85126pt x 1336.995pt>
+<graphics/usecase/freight-flex-UC-Client.png, id=1051, 1030.85126pt x 1336.995pt>
 File: graphics/usecase/freight-flex-UC-Client.png Graphic file (type png)
 <use graphics/usecase/freight-flex-UC-Client.png>
 Package pdftex.def Info: graphics/usecase/freight-flex-UC-Client.png  used on input line 446.
@@ -1520,7 +1520,7 @@ Package pdftex.def Info: graphics/usecase/freight-flex-UC-Client.png  used on in
 ]
 
 [41]
-<graphics/DB/freight-flex-ERD.drawio.png, id=1045, 1926.44719pt x 3209.23969pt>
+<graphics/DB/freight-flex-ERD.drawio.png, id=1074, 1926.44719pt x 3209.23969pt>
 File: graphics/DB/freight-flex-ERD.drawio.png Graphic file (type png)
 <use graphics/DB/freight-flex-ERD.drawio.png>
 Package pdftex.def Info: graphics/DB/freight-flex-ERD.drawio.png  used on input line 7.
@@ -1563,7 +1563,7 @@ Overfull \hbox (27.50174pt too wide) in paragraph at lines 768--768
 [51]
 
 [52]
-<graphics/sys-design/system-architecture.png, id=1092, 723.45282pt x 368.87813pt>
+<graphics/sys-design/system-architecture.png, id=1121, 723.45282pt x 368.87813pt>
 File: graphics/sys-design/system-architecture.png Graphic file (type png)
 <use graphics/sys-design/system-architecture.png>
 Package pdftex.def Info: graphics/sys-design/system-architecture.png  used on input line 949.
@@ -1603,7 +1603,7 @@ Overfull \hbox (1.01788pt too wide) in paragraph at lines 20--21
 
 
 [58]
-<graphics/sys-design/frontend_folder_structure_1.png, id=1120, 161.85469pt x 284.56313pt>
+<graphics/sys-design/frontend_folder_structure_1.png, id=1149, 161.85469pt x 284.56313pt>
 File: graphics/sys-design/frontend_folder_structure_1.png Graphic file (type png)
 <use graphics/sys-design/frontend_folder_structure_1.png>
 Package pdftex.def Info: graphics/sys-design/frontend_folder_structure_1.png  used on input line 88.
@@ -1617,7 +1617,7 @@ Overfull \hbox (5.86824pt too wide) in paragraph at lines 109--110
 []\T5/ptm/b/n/12 util \T5/ptm/m/n/12 - Pro-vides general-purpose util-ity classes that sup-port var-i-ous op-er-a-tions through-
  []
 
-<graphics/sys-design/backend_folder_structure_2.png, id=1131, 237.13594pt x 420.06938pt>
+<graphics/sys-design/backend_folder_structure_2.png, id=1160, 237.13594pt x 420.06938pt>
 File: graphics/sys-design/backend_folder_structure_2.png Graphic file (type png)
 <use graphics/sys-design/backend_folder_structure_2.png>
 Package pdftex.def Info: graphics/sys-design/backend_folder_structure_2.png  used on input line 143.
@@ -1637,7 +1637,7 @@ Package pdftex.def Info: graphics/sys-design/backend_folder_structure_2.png  use
 
 
 ]
-<graphics/chapter6/postmain.png, id=1150, 1923.43594pt x 1017.04968pt>
+<graphics/chapter6/postmain.png, id=1179, 1923.43594pt x 1017.04968pt>
 File: graphics/chapter6/postmain.png Graphic file (type png)
 <use graphics/chapter6/postmain.png>
 Package pdftex.def Info: graphics/chapter6/postmain.png  used on input line 47.
@@ -1645,37 +1645,211 @@ Package pdftex.def Info: graphics/chapter6/postmain.png  used on input line 47.
 
 
 [64]
+<graphics/chapter6/katalon.png, id=1187, 986.68625pt x 581.17125pt>
+File: graphics/chapter6/katalon.png Graphic file (type png)
+<use graphics/chapter6/katalon.png>
+Package pdftex.def Info: graphics/chapter6/katalon.png  used on input line 56.
+(pdftex.def)             Requested size: 426.79134pt x 251.38858pt.
+
 
 [65 <./graphics/chapter6/postmain.png>]
-<graphics/chapter6/quotes.png, id=1165, 1924.18875pt x 906.38625pt>
+
+[66 <./graphics/chapter6/katalon.png (PNG copy)>]
+<graphics/chapter6/katalon_installation.png, id=1199, 1918.16624pt x 1020.81375pt>
+File: graphics/chapter6/katalon_installation.png Graphic file (type png)
+<use graphics/chapter6/katalon_installation.png>
+Package pdftex.def Info: graphics/chapter6/katalon_installation.png  used on input line 88.
+(pdftex.def)             Requested size: 426.79134pt x 227.11867pt.
+<graphics/chapter6/new_test_suite.png, id=1200, 368.87813pt x 209.28188pt>
+File: graphics/chapter6/new_test_suite.png Graphic file (type png)
+<use graphics/chapter6/new_test_suite.png>
+Package pdftex.def Info: graphics/chapter6/new_test_suite.png  used on input line 97.
+(pdftex.def)             Requested size: 227.62206pt x 129.14027pt.
+
+
+[67 <./graphics/chapter6/katalon_installation.png>]
+<graphics/chapter6/web_recorder.png, id=1210, 524.71031pt x 126.4725pt>
+File: graphics/chapter6/web_recorder.png Graphic file (type png)
+<use graphics/chapter6/web_recorder.png>
+Package pdftex.def Info: graphics/chapter6/web_recorder.png  used on input line 104.
+(pdftex.def)             Requested size: 227.62206pt x 54.86456pt.
+
+Overfull \hbox (3.98325pt too wide) in paragraph at lines 118--119
+[]|\T5/ptm/b/n/12 Result| 
+ []
+
+
+Underfull \hbox (badness 1221) in paragraph at lines 120--120
+[]|\T5/ptm/m/n/12 Login with valid cre-
+ []
+
+
+Underfull \hbox (badness 4886) in paragraph at lines 120--120
+[]|\T5/ptm/m/n/12 User is au-then-ti-cated
+ []
+
+
+Underfull \hbox (badness 2384) in paragraph at lines 122--122
+[]|\T5/ptm/m/n/12 User en-ters in-cor-rect user-
+ []
+
+
+Underfull \hbox (badness 2617) in paragraph at lines 122--122
+[]|\T5/ptm/m/n/12 System dis-plays er-ror
+ []
+
+
+Underfull \hbox (badness 2285) in paragraph at lines 122--122
+\T5/ptm/m/n/12 mes-sage and pre-vents
+ []
+
+
+Underfull \hbox (badness 4886) in paragraph at lines 126--126
+[]|\T5/ptm/m/n/12 User is au-then-ti-cated
+ []
+
+
+
+[68 <./graphics/chapter6/new_test_suite.png> <./graphics/chapter6/web_recorder.png>]
+<graphics/chapter6/test_suite_auth.png, id=1217, 712.91344pt x 502.12593pt>
+File: graphics/chapter6/test_suite_auth.png Graphic file (type png)
+<use graphics/chapter6/test_suite_auth.png>
+Package pdftex.def Info: graphics/chapter6/test_suite_auth.png  used on input line 134.
+(pdftex.def)             Requested size: 426.79134pt x 300.60364pt.
+
+Overfull \hbox (3.98325pt too wide) in paragraph at lines 144--145
+[]|\T5/ptm/b/n/12 Result| 
+ []
+
+
+Underfull \hbox (badness 1400) in paragraph at lines 146--146
+\T5/ptm/m/n/12 tion and search func-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+[]|\T5/ptm/m/n/12 System cre-ates new
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 148--148
+\T5/ptm/m/n/12 client and dis-plays
+ []
+
+
+Underfull \hbox (badness 1917) in paragraph at lines 150--150
+[]|\T5/ptm/m/n/12 System up-dates client
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
+\T5/ptm/m/n/12 in-for-ma-tion and dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 150--150
+\T5/ptm/m/n/12 plays con-fir-ma-tion
+ []
+
+
+
+[69 <./graphics/chapter6/test_suite_auth.png>]
+<graphics/chapter6/test_suite_client.png, id=1223, 721.94719pt x 502.87875pt>
+File: graphics/chapter6/test_suite_client.png Graphic file (type png)
+<use graphics/chapter6/test_suite_client.png>
+Package pdftex.def Info: graphics/chapter6/test_suite_client.png  used on input line 158.
+(pdftex.def)             Requested size: 426.79134pt x 297.28673pt.
+
+Overfull \hbox (3.98325pt too wide) in paragraph at lines 168--169
+[]|\T5/ptm/b/n/12 Result| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 172--172
+[]|\T5/ptm/m/n/12 System cre-ates new
+ []
+
+
+Underfull \hbox (badness 4699) in paragraph at lines 172--172
+\T5/ptm/m/n/12 freight rate and dis-
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T5/ptm/m/n/12 rate in-for-ma-tion and
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 174--174
+\T5/ptm/m/n/12 dis-plays con-fir-ma-tion
+ []
+
+
+
+[70 <./graphics/chapter6/test_suite_client.png>]
+<graphics/chapter6/test_suite_freight_rate.png, id=1229, 711.4078pt x 505.89pt>
+File: graphics/chapter6/test_suite_freight_rate.png Graphic file (type png)
+<use graphics/chapter6/test_suite_freight_rate.png>
+Package pdftex.def Info: graphics/chapter6/test_suite_freight_rate.png  used on input line 182.
+(pdftex.def)             Requested size: 426.79134pt x 303.50545pt.
+
+Overfull \hbox (3.98325pt too wide) in paragraph at lines 192--193
+[]|\T5/ptm/b/n/12 Result| 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+[]|\T5/ptm/m/n/12 System cre-ates new
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 196--196
+\T5/ptm/m/n/12 User and dis-plays
+ []
+
+
+Underfull \hbox (badness 1968) in paragraph at lines 198--198
+[]|\T5/ptm/m/n/12 System dis-play cor-re-
+ []
+
+
+
+[71 <./graphics/chapter6/test_suite_freight_rate.png>]
+<graphics/chapter6/test_suite_users.png, id=1236, 709.90219pt x 508.14844pt>
+File: graphics/chapter6/test_suite_users.png Graphic file (type png)
+<use graphics/chapter6/test_suite_users.png>
+Package pdftex.def Info: graphics/chapter6/test_suite_users.png  used on input line 206.
+(pdftex.def)             Requested size: 426.79134pt x 305.50395pt.
+
+
+[72 <./graphics/chapter6/test_suite_users.png>]
+<graphics/chapter6/quotes.png, id=1244, 1924.18875pt x 906.38625pt>
 File: graphics/chapter6/quotes.png Graphic file (type png)
 <use graphics/chapter6/quotes.png>
-Package pdftex.def Info: graphics/chapter6/quotes.png  used on input line 67.
+Package pdftex.def Info: graphics/chapter6/quotes.png  used on input line 222.
 (pdftex.def)             Requested size: 426.79134pt x 201.03757pt.
-<graphics/chapter6/staff_before.png, id=1166, 1926.44719pt x 908.64468pt>
+<graphics/chapter6/staff_before.png, id=1245, 1926.44719pt x 908.64468pt>
 File: graphics/chapter6/staff_before.png Graphic file (type png)
 <use graphics/chapter6/staff_before.png>
-Package pdftex.def Info: graphics/chapter6/staff_before.png  used on input line 74.
+Package pdftex.def Info: graphics/chapter6/staff_before.png  used on input line 229.
 (pdftex.def)             Requested size: 426.79134pt x 201.3028pt.
 
 
-[66 <./graphics/chapter6/quotes.png> <./graphics/chapter6/staff_before.png>])
+[73 <./graphics/chapter6/quotes.png>])
 
-[67]
+[74 <./graphics/chapter6/staff_before.png>]
 \openout2 = `chapters/main/7.final.aux'.
 
  (chapters/main/7.final.tex
 
-[68
+[75
 
 
 
 
-]
+])
 
-[69])
-
-[70] (thesis.bbl
+[76] (thesis.bbl
 Underfull \hbox (badness 10000) in paragraph at lines 25--29
 []\T5/ptm/m/n/12 European Com-mis-sion.  Dig-i-tal trans-port and lo-gis-tics fo-rum,
  []
@@ -1697,7 +1871,7 @@ Underfull \hbox (badness 5359) in paragraph at lines 55--58
 
 
 
-[71
+[77
 
 
 
@@ -1713,9 +1887,9 @@ Underfull \hbox (badness 10000) in paragraph at lines 130--135
 
 
 
-[72]
+[78]
 
-[73]
+[79]
 Underfull \hbox (badness 1400) in paragraph at lines 215--220
 \T5/ptm/m/n/12 dus-trial de-vel-op-ment in the dig-i-tal era, 2023.  URL: [][]$\T5/cmtt/m/n/12 https : / / www . unido . org /
  []
@@ -1726,27 +1900,42 @@ Underfull \hbox (badness 10000) in paragraph at lines 271--276
  []
 
 
-Underfull \hbox (badness 3568) in paragraph at lines 297--301
-[]\T5/ptm/m/n/12 Typescript.  Type-script, n.a.  Ac-cessed: 2024-12-13.  URL: [][]$\T5/cmtt/m/n/12 https : / / www .
+Underfull \hbox (badness 10000) in paragraph at lines 278--283
+[]\T5/ptm/m/n/12 Katalon Team.  In-tro-duc-tion to web test-ing in kat-alon stu-dio,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--283
+\T5/ptm/m/n/12 n.d.  Ac-cessed: 2024-12-13.  URL: [][]$\T5/cmtt/m/n/12 https : / / docs . katalon . com /
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 278--283
+\T5/cmtt/m/n/12 katalon-[]studio / get-[]started / supported-[]applications-[]under-[]test-[]aut /
  []
 
 
 
-[74])
+[80]
+Underfull \hbox (badness 3568) in paragraph at lines 304--308
+[]\T5/ptm/m/n/12 Typescript.  Type-script, n.a.  Ac-cessed: 2024-12-13.  URL: [][]$\T5/cmtt/m/n/12 https : / / www .
+ []
 
-[75]
+)
+
+[81]
 \openout2 = `chapters/back/task-assigment.aux'.
 
  (chapters/back/task-assigment.tex
 
-[76
+[82
 
 
 ])
 
-[77]
+[83]
 
-[78
+[84
 
 
 
@@ -1766,20 +1955,20 @@ LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2020/03/25>
  ***********
 Package rerunfilecheck Info: File `thesis.out' has not changed.
-(rerunfilecheck)             Checksum: 8359A16B0274E6A3598E25EB0629DC23;20202.
+(rerunfilecheck)             Checksum: 8859589C32795CB79DD957D9B4BE1770;20472.
  ) 
 Here is how much of TeX's memory you used:
- 31084 strings out of 469959
- 582627 string characters out of 5469834
- 991487 words of memory out of 5000000
- 56975 multiletter control sequences out of 15000+600000
+ 31192 strings out of 469959
+ 586203 string characters out of 5469834
+ 992768 words of memory out of 5000000
+ 57059 multiletter control sequences out of 15000+600000
  668957 words of font info for 92 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,18n,107p,583b,777s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 99i,18n,107p,583b,773s stack positions out of 10000i,1000n,20000p,200000b,200000s
 <C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/urwvn/utmb8v.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/urw/times/utmr8a.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/urwvn/utmr8v.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/urwvn/utmri8v.pfb><C:/Users/ADMIN/AppData/Local/Programs/MiKTeX/fonts/type1/vntex/vnr/vntt12.pfb>
-Output written on thesis.pdf (92 pages, 2230580 bytes).
+Output written on thesis.pdf (98 pages, 2913799 bytes).
 PDF statistics:
- 1426 PDF objects out of 1440 (max. 8388607)
- 328 named destinations out of 1000 (max. 500000)
- 1094 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 1508 PDF objects out of 1728 (max. 8388607)
+ 352 named destinations out of 1000 (max. 500000)
+ 1142 words of extra memory for PDF output out of 10000 (max. 10000000)
 
