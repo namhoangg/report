@@ -112,22 +112,24 @@
 \contentsline {subsection}{\numberline {5.2.2}Frontend Source Code Structure}{59}{subsection.5.2.2}%
 \contentsline {subsection}{\numberline {5.2.3}Backend Source Code Structure}{60}{subsection.5.2.3}%
 \contentsline {section}{\numberline {5.3}Interfaces implementation}{62}{section.5.3}%
-\contentsline {chapter}{\chapternumberline {6}Testing and System Evaluation}{63}{chapter.6}%
-\contentsline {section}{\numberline {6.1}System Testing}{63}{section.6.1}%
-\contentsline {paragraph}{Why Testing Matters}{63}{section*.56}%
-\contentsline {paragraph}{Main Testing Categories}{63}{section*.57}%
-\contentsline {paragraph}{Common Testing Approaches}{64}{section*.58}%
-\contentsline {subsection}{\numberline {6.1.1}API Testing}{64}{subsection.6.1.1}%
-\contentsline {subsection}{\numberline {6.1.2}Web Interface Testing}{65}{subsection.6.1.2}%
-\contentsline {subsubsection}{\numberline {6.1.2.1}Testing Technology Selection}{65}{subsubsection.6.1.2.1}%
-\contentsline {subsubsection}{\numberline {6.1.2.2}Key Features of Katalon Studio}{66}{subsubsection.6.1.2.2}%
-\contentsline {subsubsection}{\numberline {6.1.2.3}Testing Process}{67}{subsubsection.6.1.2.3}%
-\contentsline {subsubsection}{\numberline {6.1.2.4}Testing Results}{68}{subsubsection.6.1.2.4}%
-\contentsline {section}{\numberline {6.2}System Evaluation}{72}{section.6.2}%
-\contentsline {subsection}{\numberline {6.2.1}Evaluation results}{73}{subsection.6.2.1}%
-\contentsline {chapter}{\chapternumberline {7}Summary, Evaluation and Development Direction}{75}{chapter.7}%
-\contentsline {section}{\numberline {7.1}Achieved outcomes}{75}{section.7.1}%
-\contentsline {section}{\numberline {7.2}System Evaluation}{75}{section.7.2}%
-\contentsline {section}{\numberline {7.3}Future Development Direction}{76}{section.7.3}%
-\contentsline {chapter}{References}{77}{chapter*.74}%
-\contentsline {appendix}{\chapternumberline {A}Task Assignment}{83}{appendix.A}%
+\contentsline {section}{\numberline {5.4}Third-Party Integrations}{75}{section.5.4}%
+\contentsline {subsection}{\numberline {5.4.1}File Upload and Storage with Minio}{75}{subsection.5.4.1}%
+\contentsline {chapter}{\chapternumberline {6}Testing and System Evaluation}{79}{chapter.6}%
+\contentsline {section}{\numberline {6.1}System Testing}{79}{section.6.1}%
+\contentsline {paragraph}{Why Testing Matters}{79}{section*.81}%
+\contentsline {paragraph}{Main Testing Categories}{79}{section*.82}%
+\contentsline {paragraph}{Common Testing Approaches}{80}{section*.83}%
+\contentsline {subsection}{\numberline {6.1.1}API Testing}{80}{subsection.6.1.1}%
+\contentsline {subsection}{\numberline {6.1.2}Web Interface Testing}{81}{subsection.6.1.2}%
+\contentsline {subsubsection}{\numberline {6.1.2.1}Testing Technology Selection}{81}{subsubsection.6.1.2.1}%
+\contentsline {subsubsection}{\numberline {6.1.2.2}Key Features of Katalon Studio}{82}{subsubsection.6.1.2.2}%
+\contentsline {subsubsection}{\numberline {6.1.2.3}Testing Process}{83}{subsubsection.6.1.2.3}%
+\contentsline {subsubsection}{\numberline {6.1.2.4}Testing Results}{84}{subsubsection.6.1.2.4}%
+\contentsline {section}{\numberline {6.2}System Evaluation}{88}{section.6.2}%
+\contentsline {subsection}{\numberline {6.2.1}Evaluation results}{89}{subsection.6.2.1}%
+\contentsline {chapter}{\chapternumberline {7}Summary, Evaluation and Development Direction}{91}{chapter.7}%
+\contentsline {section}{\numberline {7.1}Achieved outcomes}{91}{section.7.1}%
+\contentsline {section}{\numberline {7.2}System Evaluation}{91}{section.7.2}%
+\contentsline {section}{\numberline {7.3}Future Development Direction}{92}{section.7.3}%
+\contentsline {chapter}{References}{93}{chapter*.99}%
+\contentsline {appendix}{\chapternumberline {A}Task Assignment}{99}{appendix.A}%
