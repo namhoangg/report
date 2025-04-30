@@ -148,3 +148,257 @@ This layered architecture provides several benefits:
 The architecture follows the dependency inversion principle, with controllers depending on services, which depend on repositories, creating a clean flow of control and data throughout the application.
 
 \section{Interfaces implementation}
+Below are the key interfaces implemented in our system, along with their respective functionalities:
+% Authentication Interfaces
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{graphics/UI/login.png}
+    \caption{Login Interface}
+    \label{fig:login}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{graphics/UI/forgot.png}
+    \caption{Password Recovery Interface}
+    \label{fig:forgot}
+\end{figure}
+
+% Main Dashboard Interface
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{graphics/UI/admin-dashboard.png}
+    \caption{Administrator Dashboard}
+    \label{fig:admin-dashboard}
+\end{figure}
+
+% Landing Page
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{graphics/UI/landing-page.png}
+    \caption{System Landing Page}
+    \label{fig:landing-page}
+\end{figure}
+
+% Client Management Interfaces
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{graphics/UI/client_management.png}
+    \caption{Client Management Overview}
+    \label{fig:client-management}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{graphics/UI/new_client.png}
+    \caption{New Client Registration}
+    \label{fig:new-client}
+\end{figure}
+
+% User and Role Management
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{graphics/UI/user-management.png}
+    \caption{User Management}
+    \label{fig:user-management}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{graphics/UI/new-user.png}
+    \caption{New User Creation}
+    \label{fig:new-user}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{graphics/UI/role-management.png}
+    \caption{Role Management}
+    \label{fig:role-management}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{graphics/UI/new-role.png}
+    \caption{New Role Creation}
+    \label{fig:new-role}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{graphics/UI/permission-management.png}
+    \caption{Permission Management}
+    \label{fig:permission-management}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{graphics/UI/new-permission.png}
+    \caption{New Permission Creation}
+    \label{fig:new-permission}
+\end{figure}
+
+% Group Management
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{graphics/UI/group-management.png}
+    \caption{Group Management Overview}
+    \label{fig:group-management}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{graphics/UI/new-group.png}
+    \caption{New Group Creation}
+    \label{fig:new-group}
+\end{figure}
+
+% Provider Management
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{graphics/UI/provider-management.png}
+    \caption{Provider Management Overview}
+    \label{fig:provider-management}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{graphics/UI/new-provider.png}
+    \caption{New Provider Registration}
+    \label{fig:new-provider}
+\end{figure}
+
+% Charge and Rate Management
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{graphics/UI/charge-type-management.png}
+    \caption{Charge Type Management}
+    \label{fig:charge-type-management}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{graphics/UI/new-charge-type.png}
+    \caption{New Charge Type Creation}
+    \label{fig:new-charge-type}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{graphics/UI/service-charge-management.png}
+    \caption{Service Charge Management}
+    \label{fig:service-charge-management}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{graphics/UI/new-service-charge.png}
+    \caption{New Service Charge Creation}
+    \label{fig:new-service-charge}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{graphics/UI/rate-management.png}
+    \caption{Rate Management}
+    \label{fig:rate-management}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{graphics/UI/new-freight-rate.png}
+    \caption{New Freight Rate Creation}
+    \label{fig:new-freight-rate}
+\end{figure}
+
+% Shipment and Quote Management
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{graphics/UI/shipment-management.png}
+    \caption{Shipment Management}
+    \label{fig:shipment-management}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{graphics/UI/quote-managemet.png}
+    \caption{Quote Management}
+    \label{fig:quote-management}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=15cm]{graphics/UI/new-quotes.png}
+    \caption{New Quote Creation}
+    \label{fig:new-quotes}
+\end{figure}
+
+\section{Third-Party Integrations}
+\subsection{File Upload and Storage with Minio}
+Minio \cite{minio} is an open-source object storage server that provides a high-performance, S3-compatible API for storing and retrieving unstructured data. We integrated Minio into our system to handle file uploads and storage efficiently. The integration allows users to upload files directly from the frontend, which are then securely stored in Minio's object storage.
+
+Steps to integrate Minio into our system:
+\begin{itemize}
+    \item \textbf{Infrastructure Setup:} Deployed Minio as a Docker container to provide consistent development and production environments. The Docker configuration ensures easy deployment and maintenance of the storage service.
+    
+    \item \textbf{Configuration:} Added Minio configuration parameters to our application properties file to establish connectivity between our Spring Boot application and the Minio server:
+    
+    \begin{verbatim}
+minio:
+  endpoint: http://localhost:9000
+  accessKey: minioadmin
+  secretKey: minioadmin
+  bucketName: files
+    \end{verbatim}
+    
+    \item \textbf{Dependency Integration:} Added the Minio Java client dependency to our project's pom.xml file:
+    
+    \begin{verbatim}
+<dependency>
+    <groupId>io.minio</groupId>
+    <artifactId>minio</artifactId>
+    <version>8.5.2</version>
+</dependency>
+    \end{verbatim}
+    
+    \item \textbf{Service Layer Development:} Created a service class to encapsulate all interactions with the Minio server, including file uploads, downloads, and pre-signed URL generation.
+    
+    \item \textbf{Entity Creation:} Designed a Document entity to store metadata about files uploaded to Minio:
+    
+    \begin{verbatim}
+@Entity
+@Table(name = "document")
+public class Document {
+    @Id
+    private Long id;
+    private String name;     // Original file name
+    private String type;     // File MIME type
+    private String path;     // Path in Minio storage
+    private String description;
+    private LocalDateTime createdAt;
+    private Long createdBy;
+}
+    \end{verbatim}
+    
+    \item \textbf{Controller Implementation:} Developed REST endpoints to handle file operations, including upload, download, and deletion.
+    
+    \item \textbf{Security Integration:} Implemented secure file access controls using pre-signed URLs, allowing temporary access to files without exposing storage credentials.
+    
+    \item \textbf{Unique File Naming:} Created a strategy to ensure unique file names by generating timestamps or UUIDs as prefixes for all uploaded files.
+    
+    \item \textbf{Frontend Component Development:} Built frontend components to facilitate file uploads and display stored files to users.
+\end{itemize}
+
+The integration provides several key benefits to our system:
+
+\begin{itemize}
+    \item \textbf{Scalability:} Minio's object storage architecture allows for horizontal scaling to handle increasing storage demands.
+    
+    \item \textbf{Cost-Effectiveness:} By using an open-source solution, we avoided vendor lock-in and associated costs of commercial storage services.
+    
+    \item \textbf{Performance:} Direct uploads to Minio reduce the load on our application servers and provide faster file operations.
+    
+    \item \textbf{Security:} The separation of file storage from application logic enhances overall system security.
+    
+    \item \textbf{Compatibility:} The S3-compatible API ensures our application can transition to other storage solutions if needed in the future.
+\end{itemize}
