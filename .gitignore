@@ -1,0 +1,21 @@
+# LaTeX auxiliary and intermediate files
+*.aux
+*.log
+*.out
+*.toc
+*.lof
+*.lot
+*.fls
+*.fdb_latexmk
+*.synctex.gz
+*.bbl
+*.blg
+
+# Temporary files
+*.tmp
+*.bak
+*.swp
+*.dvi
+
+# PDF files (if you don't want to version control them)
+*.pdf
