@@ -51,7 +51,7 @@
 
 \renewcommand{\@title}{Report title}
 
-\newcommand{\@defcouncil}{Council}
+\newcommand{\@defcouncil}{THESIS COMMITTEE}
 \newcommand{\defcouncil}[1]{\renewcommand{\@defcouncil}{#1}}
 
 \newcommand{\@supervisor}{Supervisor}
@@ -157,19 +157,19 @@
     {\mdseries Major: \@stumajor}
   \end{center}
   \vfill
-  \hfill\parbox[t]{13cm}{
-    COUNCIL: \@defcouncil
+  \hfill\parbox[t]{14cm}{
+    THESIS COMMITTEE: \@defcouncil
 
     SUPERVISOR(s): \parbox[t]{10cm}{
         \@supervisor
-      \parbox[t]{3cm}{\includegraphics[height=1.5\baselineskip]{graphics/signature.png}}
+    
     }
 
     % SECRETARY: \@secretary
     % \\
     % REVIEWER: \@reviewer
 
-    \hspace*{4cm} ---o0o---
+    \hspace*{5cm} ---o0o---
 
     \@stuname
   }
