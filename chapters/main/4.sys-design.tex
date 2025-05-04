@@ -4,9 +4,16 @@
 \subsection{Enhanced ER Diagram.}
 \begin{figure}[H]
     \centering
-    \includegraphics[height=0.85\textheight]{graphics/DB/freight-flex-ERD.drawio.png}
+    \includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{graphics/DB/freight-flex-ERD.drawio.png}
     \caption{EERD}
     \label{fig:EERD}
+\end{figure}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=\textwidth, height=\textheight, keepaspectratio]{graphics/DB/entity-mapping.png}
+    \caption{Enitty Mapping}
+    \label{fig:entity-mapping}
 \end{figure}
 % \subsection{Entity Detail}
 % \subsubsection{staff}
@@ -736,7 +743,7 @@
 \subsubsection{Client}
 \begin{table}[H]
     \centering
-    \begin{tabular}{|p{3cm}|p{2cm}|p{\dimexpr\textwidth-6.8cm}|} % Adjust widths as needed
+    \begin{tabular}{|p{4cm}|p{2cm}|p{\dimexpr\textwidth-7.8cm}|} % Adjust widths as needed
         \hline
         \rowcolor[HTML]{C0C0C0} 
         \textbf{Attribute} & \textbf{Type} & \textbf{Description} \\ \hline
@@ -755,7 +762,7 @@
 \subsubsection{Provider}
 \begin{table}[H]
     \centering
-    \begin{tabular}{|p{3cm}|p{2cm}|p{\dimexpr\textwidth-6.8cm}|} % Adjust widths as needed
+    \begin{tabular}{|p{4cm}|p{2cm}|p{\dimexpr\textwidth-7.8cm}|} % Adjust widths as needed
         \hline
         \rowcolor[HTML]{C0C0C0} 
         \textbf{Attribute} & \textbf{Type} & \textbf{Description} \\ \hline
@@ -832,13 +839,13 @@
 \subsubsection{Service Charge}
 \begin{table}[H]
     \centering
-    \begin{tabular}{|p{3cm}|p{2cm}|p{\dimexpr\textwidth-6.8cm}|} % Adjust widths as needed
+    \begin{tabular}{|p{3cm}|p{3cm}|p{\dimexpr\textwidth-7.8cm}|} % Adjust widths as needed
         \hline
         \rowcolor[HTML]{C0C0C0} 
         \textbf{Attribute} & \textbf{Type} & \textbf{Description} \\ \hline
         \underline{id} & Integer & Primary key \\ \hline
         charge\_type\_id & Integer & Foreign key to Charge Type \\ \hline
-        price & Numeric & Price amount \\ \hline
+        price & Numeric(19, 2) & Price amount \\ \hline
         currency\_id & Integer & Foreign key to Currency \\ \hline
         transport\_type & Integer & Type of transport \\ \hline
         valid\_from & Date & Start date of validity \\ \hline
@@ -943,6 +950,126 @@
     \label{tab:quote-price-detail-table}
 \end{table}
 
+\subsubsection{Shipment}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3.5cm}|p{2cm}|p{\dimexpr\textwidth-7.3cm}|} % Adjust widths as needed
+        \hline
+        \rowcolor[HTML]{C0C0C0} 
+        \textbf{Attribute} & \textbf{Type} & \textbf{Description} \\ \hline
+        \underline{id} & Integer & Primary key \\ \hline
+        code & String & Shipment code \\ \hline
+        quote\_id & Integer & Foreign key to Quote \\ \hline
+        etd & Date & Estimated time of departure \\ \hline
+        eta & Date & Estimated time of arrival \\ \hline
+        shipment\_status\_id & Integer & Foreign key to Shipment Status \\ \hline
+        vehicle\_no & String & Vehicle number \\ \hline
+        note & String & Additional notes \\ \hline
+        attachment\_ids & Integer[] & Foreign key to Attachment \\ \hline
+        created\_at & Timestamp & The time when the Shipment is created \\ \hline
+        updated\_at & Timestamp & The time when the Shipment is updated \\ \hline
+        created\_by & Integer & Foreign key to Staff \\ \hline
+        updated\_by & Integer & Foreign key to Staff \\ \hline
+    \end{tabular}
+    \caption{Table of Shipment}
+    \label{tab:shipment-table}
+\end{table}
+
+\subsubsection{Shipment Status}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{2cm}|p{\dimexpr\textwidth-6.8cm}|} % Adjust widths as needed
+        \hline
+        \rowcolor[HTML]{C0C0C0} 
+        \textbf{Attribute} & \textbf{Type} & \textbf{Description} \\ \hline
+        \underline{id} & Integer & Primary key \\ \hline
+        shipment\_id & Integer & Foreign key to Shipment \\ \hline
+        status & String & Shipment status \\ \hline
+        eta & Date & Estimated time of arrival \\ \hline
+        ata & Date & Actual time of arrival \\ \hline
+        note & String & Additional notes \\ \hline
+        created\_at & Timestamp & The time when the Shipment Status is created \\ \hline
+        updated\_at & Timestamp & The time when the Shipment Status is updated \\ \hline
+        created\_by & Integer & Foreign key to Staff \\ \hline
+        updated\_by & Integer & Foreign key to Staff \\ \hline
+    \end{tabular}
+    \caption{Table of Shipment Status}
+    \label{tab:shipment-status-table}
+\end{table}
+
+\subsubsection{Invoice}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{4cm}|p{3cm}|p{\dimexpr\textwidth-8.8cm}|} % Adjust widths as needed
+        \hline
+        \rowcolor[HTML]{C0C0C0} 
+        \textbf{Attribute} & \textbf{Type} & \textbf{Description} \\ \hline
+        \underline{id} & Integer & Primary key \\ \hline
+        shipment\_id & Integer & Foreign key to Shipment \\ \hline
+        provider\_id & Integer & Foreign key to Provider \\ \hline
+        client\_id & Integer & Foreign key to Client \\ \hline
+        currency\_id & Integer & Foreign key to Currency \\ \hline
+        total\_amount & Numeric(19, 2) & Total amount \\ \hline
+        tax\_amount & Numeric(19, 2) & Tax amount \\ \hline
+        total\_amount\_with\_tax & Numeric(19, 2) & Total amount with tax \\ \hline
+        payment\_status & String & Payment status \\ \hline
+        exchange\_rate & Numeric(19, 4) & Exchange rate \\ \hline
+        created\_at & Timestamp & The time when the Invoice is created \\ \hline
+        updated\_at & Timestamp & The time when the Invoice is updated \\ \hline
+        created\_by & Integer & Foreign key to Staff \\ \hline
+        updated\_by & Integer & Foreign key to Staff \\ \hline
+    \end{tabular}
+    \caption{Table of Invoice}
+    \label{tab:invoice-table}
+\end{table}
+
+\subsubsection{Debit/Credit Note}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{2cm}|p{\dimexpr\textwidth-6.8cm}|} % Adjust widths as needed
+        \hline
+        \rowcolor[HTML]{C0C0C0} 
+        \textbf{Attribute} & \textbf{Type} & \textbf{Description} \\ \hline
+        \underline{id} & Integer & Primary key \\ \hline
+        is\_debit & Boolean & Is debit note \\ \hline
+        shipment\_id & Integer & Foreign key to Shipment \\ \hline
+        provider\_id & Integer & Foreign key to Provider \\ \hline
+        client\_id & Integer & Foreign key to Client \\ \hline
+        currency\_id & Integer & Foreign key to Currency \\ \hline
+        due\_date & Date & Due date \\ \hline
+        payment\_method & String & Payment method \\ \hline
+        created\_at & Timestamp & The time when the Debit/Credit Note is created \\ \hline
+        updated\_at & Timestamp & The time when the Debit/Credit Note is updated \\ \hline
+        created\_by & Integer & Foreign key to Staff \\ \hline
+        updated\_by & Integer & Foreign key to Staff \\ \hline
+    \end{tabular}
+    \caption{Table of Debit/Credit Note}
+    \label{tab:debit-credit-note-table}
+\end{table}
+
+\subsubsection{Payment}
+\begin{table}[H]
+    \centering
+    \begin{tabular}{|p{3cm}|p{3cm}|p{\dimexpr\textwidth-7.8cm}|} % Adjust widths as needed
+        \hline
+        \rowcolor[HTML]{C0C0C0} 
+        \textbf{Attribute} & \textbf{Type} & \textbf{Description} \\ \hline
+        \underline{id} & Integer & Primary key \\ \hline
+        invoice\_id & Integer & Foreign key to Invoice \\ \hline
+        amount & Numeric(19, 2) & Payment amount \\ \hline
+        payment\_method & String & Payment method \\ \hline
+        note & String & Additional notes \\ \hline
+        extra\_data & String & Extra data \\ \hline
+        attachment\_ids & Integer[] & Foreign key to Attachment \\ \hline
+        created\_at & Timestamp & The time when the Payment is created \\ \hline
+        updated\_at & Timestamp & The time when the Payment is updated \\ \hline
+        created\_by & Integer & Foreign key to Staff \\ \hline
+        updated\_by & Integer & Foreign key to Staff \\ \hline
+    \end{tabular}
+    \caption{Table of Payment}
+    \label{tab:payment-table}
+\end{table}
+
 \section{System Architecture}
 \begin{figure}[H]
     \centering
@@ -1027,88 +1154,3 @@ The following tools are utilized to streamline the development process:
     \item \textbf{Jira:} A project management tool that helps in tracking issues, managing tasks, and facilitating agile project management processes.
 \end{itemize}
 
-% \section{System Interface}
-% Below are some screens of the web application developed for the first phase, which do not encompass all functionalities. These selected interfaces illustrate key features and user interactions within the system.
-% \begin{figure}[h]
-%     \centering
-%     \includegraphics[width=15cm]{graphics/UI/login.png}
-%     \caption{Login Interface}
-%     \label{fig:Login Interface}
-% \end{figure}
-
-% \begin{figure}[h]
-%     \centering
-%     \includegraphics[width=15cm]{graphics/UI/admin_dashboard.png}
-%     \caption{Admin Dashboard}
-%     \label{fig:Admin Dashboard}
-% \end{figure}
-
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[width=15cm]{graphics/UI/rate-freight.png}
-%     \caption{Freight Rate Management}
-%     \label{fig:Freight Rate Management}
-% \end{figure}
-
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[width=15cm]{graphics/UI/rate-new-freight.png}
-%     \caption{New Freight Rate}
-%     \label{fig:New Freight Rate}
-% \end{figure}
-
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[width=15cm]{graphics/UI/new-sea-fcl-rates.png}
-%     \caption{New SEA FCL Freight Rate}
-%     \label{fig:New SEA FCL Freight Rate}
-% \end{figure}
-
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[width=15cm]{graphics/UI/local-charges.png}
-%     \caption{Local Charges Management}
-%     \label{fig:Local Charges Management}
-% \end{figure}
-
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[width=15cm]{graphics/UI/new-local-charges.png}
-%     \caption{New Local Charge}
-%     \label{fig:New Local Charge}
-% \end{figure}
-
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[width=15cm]{graphics/UI/providers.png}
-%     \caption{Providers Management}
-%     \label{fig:Providers Management}
-% \end{figure}
-
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[width=15cm]{graphics/UI/new-provider-1.png}
-%     \caption{New Provider Screen 1}
-%     \label{fig:New Provider Screen 1}
-% \end{figure}
-
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[width=15cm]{graphics/UI/new-provider-2.png}
-%     \caption{New Provider Screen 2}
-%     \label{fig:New Provider Screen 2}
-% \end{figure}
-
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[width=15cm]{graphics/UI/acl-peprmission.png}
-%     \caption{Permission Management}
-%     \label{fig:Permission Management}
-% \end{figure}
-
-% \begin{figure}[H]
-%     \centering
-%     \includegraphics[width=15cm]{graphics/UI/acl-role.png}
-%     \caption{Role Management}
-%     \label{fig:Role Management}
-% \end{figure}

@@ -167,60 +167,44 @@ When a freight forwarding company subscribes to FreightFlex, they receive their 
     \label{fig:Usecase Diagram for Admin}
 \end{figure}
 
-\subsubsection{Landing Page Settings}
+\subsubsection{Client Settings}
 \begin{table}[H]
 \begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
 \hline
-Usecase name     & Custom Landing Page                             \\ \hline
-Actor            & Admin                                           \\ \hline
-Description      & Custom Landing Page                             \\ \hline
-Preconditions &
-  \begin{tabular}[c]{@{}l@{}}1. Authorized with Super Admin Account.\\ 2. Actor is in Landing Page.\end{tabular} \\ \hline
-Postconditions   & Notification success or failed.                 \\ \hline
+Usecase name     & Create client                          \\ \hline
+Actor            & Admin                                \\ \hline
+Description      & Add client            \\ \hline
+Preconditions    & Authorized with Super Admin Account. \\ \hline
+Postconditions   & Show client details.                   \\ \hline
 Normal Flow &
-  \begin{tabular}[c]{@{}l@{}}1. Actor turns on edit mode.\\ 2. Actor upload Company logo.\\ 3. Actor choose color theme for each section.\\ 4. Actor choose charts to show.\\ 5. Actor drag and drop each section to suitable position.\\ 6. Actor preview changes.\end{tabular} \\ \hline
-Exception Flow   & 5a. Section size is not fit to desired position \\ \hline
-Alternative Flow &                                                 \\ \hline
-\end{tabularx}
-\caption{Custom Landing Page}
-\label{tab:custom-landing-page}
-\end{table}
-\subsubsection{System Settings}
-\begin{table}[H]
-\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
-\hline
-Usecase name     & Setup Company Profile                   \\ \hline
-Actor            & Admin                                   \\ \hline
-Description      & Setup Company Profile                   \\ \hline
-Preconditions    & 1. Authorized with Super Admin Account. \\ \hline
-Postconditions   & Notification success or failed.         \\ \hline
-Normal Flow &
-  \begin{tabular}[c]{@{}l@{}}1. Actor go to Settings.\\ 2. Actor choose tab Company Profile.\\ 3. Actor upload Company logo.\\ 4. Actor fills required fields.\\ 5. Actor click on save button.\end{tabular} \\ \hline
+  \begin{tabular}[c]{@{}l@{}}1. Actor go to Clients.\\ 2. Actor click on new client button.\\ 3. Actor fill client information.\\ 4. Actor click on save button.\end{tabular} \\ \hline
 Exception Flow &
-  \begin{tabular}[c]{@{}l@{}}3a. Wrong file format.\\ 4a. Miss required fields.\\ 4b. Wrong field format.\end{tabular} \\ \hline
-Alternative Flow & 4c. Actor changes or removes data.      \\ \hline
+  \begin{tabular}[c]{@{}l@{}}4a. Email has been used.\\ Cannot create client.\end{tabular} \\ \hline
+Alternative Flow &                                      \\ \hline
 \end{tabularx}
-\caption{Company Profile Settings}
-\label{tab:company-profile-setting}
+\caption{Create client}
+\label{tab:create-client}
 \end{table}
 
 \begin{table}[H]
 \begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
 \hline
-Usecase name     & Create role                          \\ \hline
+Usecase name     & Update client details                         \\ \hline
 Actor            & Admin                                \\ \hline
-Description      & Add role with permissions            \\ \hline
+Description      & Add client            \\ \hline
 Preconditions    & Authorized with Super Admin Account. \\ \hline
-Postconditions   & Show role details.                   \\ \hline
+Postconditions   & Show updated client details.                   \\ \hline
 Normal Flow &
-  \begin{tabular}[c]{@{}l@{}}1. Actor go to Settings.\\ 2. Actor choose tab Role.\\ 3. Actor choose add new button.\\ 4. Actor ticks the checkbox for permission\\ 5. Actor click on save button.\end{tabular} \\ \hline
-Exception Flow   &                                      \\ \hline
+  \begin{tabular}[c]{@{}l@{}}1. Actor go to Clients.\\ 2. Actor click on existing client.\\ 3. Actor choose view icon.\\ 4. Actor update client information.\\ 5. Actor click on save button.\end{tabular} \\ \hline
+Exception Flow &
+  \begin{tabular}[c]{@{}l@{}}4a. Email has been used.\\ Cannot update client.\end{tabular} \\ \hline
 Alternative Flow &                                      \\ \hline
 \end{tabularx}
-\caption{Create new role}
-\label{tab:create-role}
+\caption{Update client}
+\label{tab:update-client}
 \end{table}
-\subsubsection{Account Settings}
+
+\subsubsection{Staff Settings}
 \begin{table}[H]
 \begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
 \hline
@@ -232,100 +216,118 @@ Postconditions   & Add account successful                      \\ \hline
 Normal Flow &
   \begin{tabular}[c]{@{}l@{}}1. Actor go to Adminstrantions.\\ 2. Actor choose tab Staff.\\ 3. Actor choose create button.\\ 4. Actor fills required fields.\\ 5. Actor click on save button.\end{tabular} \\ \hline
 Exception Flow &
-  \begin{tabular}[c]{@{}l@{}}4a. Actor does not fill required fields.\\ Cannot save staff.\end{tabular} \\ \hline
+  \begin{tabular}[c]{@{}l@{}}4a. Actor does not fill required fields.\\ 4b. Email has been used.\\ Cannot save staff.\end{tabular} \\ \hline
 Alternative Flow &                                             \\ \hline
 \end{tabularx}
 \caption{Add new staff}
 \label{tab:add-staff}
 \end{table}
 
+\subsubsection{Privilege Settings}
 \begin{table}[H]
 \begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
 \hline
-Usecase name     & Grant permissions for staff account         \\ \hline
-Actor            & Admin                                       \\ \hline
-Description      & Grant permissions for staff account         \\ \hline
-Preconditions    & Authorized with an Admin Privilege account. \\ \hline
-Postconditions   & Update account successful                   \\ \hline
+Usecase name     & Create role                          \\ \hline
+Actor            & Admin                                \\ \hline
+Description      & Add role            \\ \hline
+Preconditions    & Authorized with Super Admin Account. \\ \hline
+Postconditions   & Show role details.                   \\ \hline
 Normal Flow &
-  \begin{tabular}[c]{@{}l@{}}1. Actor go to Settings.\\ 2. Actor choose tab Role.\\ 3. Actor choose role to edit.\\ 4. Actor add account to role.\\ 5. Actor click on save button.\end{tabular} \\ \hline
-Exception Flow   &                                             \\ \hline
-Alternative Flow &                                             \\ \hline
+  \begin{tabular}[c]{@{}l@{}}1. Actor go to Settings.\\ 2. Actor choose tab Role.\\ 3. Actor choose add new button.\\ 4. Actor choose type user.\\ 5. Actor add users to the role.\\ 6. Actor click on save button.\end{tabular} \\ \hline
+Exception Flow   &                                      \\ \hline
+Alternative Flow &
+\begin{tabular}[c]{@{}l@{}} 4a. Actor choose type group.\\ 5a. Actor add groups to the role.\\ 6. Actor click on save button.\end{tabular} \\ \hline
 \end{tabularx}
-\caption{Grant permissions for staff}
-\label{tab:staff-permissions}
+\caption{Create new role}
+\label{tab:create-role}
 \end{table}
-\subsubsection{Agent Settings}
 
 \begin{table}[H]
 \begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
 \hline
-Usecase name     & View agent details                       \\ \hline
+Usecase name     & Create permission                          \\ \hline
+Actor            & Admin                                \\ \hline
+Description      & Add permission            \\ \hline
+Preconditions    & Authorized with Super Admin Account. \\ \hline
+Postconditions   & Show permission details.                   \\ \hline
+Normal Flow &
+  \begin{tabular}[c]{@{}l@{}}1. Actor go to Settings.\\ 2. Actor choose tab Permission.\\ 3. Actor choose add new button.\\ 4. Actor fill required fields.\\ 5. Actor add role to the permission.\\ 6. Actor click on save button.\end{tabular} \\ \hline
+Exception Flow   &                                      \\ \hline
+Alternative Flow &
+\begin{tabular}[c]{@{}l@{}}  5a. Actor add groups to the permission.\\ 6. Actor click on save button.\end{tabular} \\ \hline
+\end{tabularx}
+\caption{Create new permission}
+\label{tab:create-permission}
+\end{table}
+
+\begin{table}[H]
+\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+\hline
+Usecase name     & Create new group                          \\ \hline
+Actor            & Admin                                \\ \hline
+Description      & Add new group            \\ \hline
+Preconditions    & Authorized with Super Admin Account. \\ \hline
+Postconditions   & Show group details.                   \\ \hline
+Normal Flow &
+  \begin{tabular}[c]{@{}l@{}}1. Actor go to Settings.\\ 2. Actor choose tab Group Management.\\ 3. Actor choose add new button.\\ 4. Actor fill required fields.\\ 5. Actor click on save button.\end{tabular} \\ \hline
+Exception Flow   &                                      \\ \hline
+Alternative Flow &                               \\ \hline
+\end{tabularx}
+\caption{Create new group}
+\label{tab:create-group}
+\end{table}
+
+\begin{table}[H]
+\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+\hline
+Usecase name     & Update group members                         \\ \hline
+Actor            & Admin                                \\ \hline
+Description      & Update group members            \\ \hline
+Preconditions    & Authorized with Super Admin Account. \\ \hline
+Postconditions   & Show group details.                   \\ \hline
+Normal Flow &
+  \begin{tabular}[c]{@{}l@{}}1. Actor go to Settings.\\ 2. Actor choose tab Group Management.\\ 3. Actor choose existing group.\\ 4. Actor choose add members button.\\ 5. Actor choose memebers to add.\\ 6. Actor click on save button.\end{tabular} \\ \hline
+Exception Flow   &                                      \\ \hline
+Alternative Flow &
+  \begin{tabular}[c]{@{}l@{}}4a. Actor choose existing members.\\  5a. Actor click remove members button.\\ 6. Actor click on save button.\end{tabular} \\ \hline
+\end{tabularx}
+\caption{Update group members}
+\label{tab:update-group-members}
+\end{table}
+
+\subsubsection{Provider Settings}
+\begin{table}[H]
+\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+\hline
+Usecase name     & View provider details                       \\ \hline
 Actor            & Admin, Staff                             \\ \hline
-Description      & View agent details                       \\ \hline
+Description      & View provider details                       \\ \hline
 Preconditions    & Staff has view permission or Admin       \\ \hline
-Postconditions   & Display a detailed agent including rates \\ \hline
-Normal Flow & \begin{tabular}[c]{@{}l@{}}1. Actor go to Providers.\\ 2. Actor choose tab Agent.\\ 3. Actor choose Agent to view.\end{tabular} \\ \hline
-Exception Flow   & Actor does not have permission to view agent\\ \hline
+Postconditions   & Display a detailed provider \\ \hline
+Normal Flow & \begin{tabular}[c]{@{}l@{}}1. Actor go to Providers.\\ 2. Actor choose action button of Provider to view.\end{tabular} \\ \hline
+Exception Flow   & Actor does not have permission to view provider\\ \hline
 Alternative Flow &                                          \\ \hline
 \end{tabularx}
-\caption{View agent details}
-\label{tab:agent-detail}
+\caption{View provider details}
+\label{tab:provider-detail}
 \end{table}
 
 \begin{table}[H]
 \begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
 \hline
-Usecase name     & Search agent                       \\ \hline
+Usecase name     & Search provider                       \\ \hline
 Actor            & Admin, Staff                       \\ \hline
-Description      & Search agent                       \\ \hline
+Description      & Search provider                       \\ \hline
 Preconditions    & Staff has view permission or Admin \\ \hline
 Postconditions &
-  Display a paginated list of agents related to the search information. \\ \hline
+  Display a paginated list of providers related to the search information. \\ \hline
 Normal Flow &
-  \begin{tabular}[c]{@{}l@{}}1. Actor go to Providers.\\ 2. Actor choose tab Agent.\\ 3. Actor enters information to search.\\ 4. Actor click search button.\end{tabular} \\ \hline
-Exception Flow   & Actor does not have permission to view agent \\ \hline
+  \begin{tabular}[c]{@{}l@{}}1. Actor go to Providers.\\ 2. Actor enter code or name to search.\end{tabular} \\ \hline
+Exception Flow   & Keyword search does not match \\ \hline
 Alternative Flow &                                    \\ \hline
 \end{tabularx}
-\caption{Search agent}
-\label{tab:agent-search}
-\end{table}
-
-\begin{table}[H]
-\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
-\hline
-Usecase name     & Import agents using excel file          \\ \hline
-Actor            & Admin, Staff                            \\ \hline
-Description      & Import agents using excel file          \\ \hline
-Preconditions    & Staff has add agent permission or Admin \\ \hline
-Postconditions   & Display agent list after imported       \\ \hline
-Normal Flow &
-  \begin{tabular}[c]{@{}l@{}}1. Actor go to Providers.\\ 2. Actor choose tab Agent.\\ 3. Actor choose Upload excel file.\\ 4. Actor preview agent list imported from excel.\\ 5. Actor confirm to import agents.\end{tabular} \\ \hline
-Exception Flow &
-  \begin{tabular}[c]{@{}l@{}}4a. Actor does not have permission to add agents\\ 4b. Wrong data format.\end{tabular} \\ \hline
-Alternative Flow & 5a. Actor cancel to import              \\ \hline
-\end{tabularx}
-\caption{Import agent from excel}
-\label{tab:agent-import-excel}
-\end{table}
-
-
-\begin{table}[H]
-\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
-\hline
-Usecase name     & Add single rate                        \\ \hline
-Actor            & Admin, Staff                           \\ \hline
-Description      & Add rate to the agent                  \\ \hline
-Preconditions    & Staff has add rate permission or Admin \\ \hline
-Postconditions   & Display rate in agent detail           \\ \hline
-Normal Flow &
-  \begin{tabular}[c]{@{}l@{}}1. Actor go to Rates.\\ 2. Actor choose tab Freight or Local Charges or Other Services.\\ 3. Actor clicks new button.\\ 4. Actor choose a provider.\\ 5. Actor fills required fields.\\ 6. Actor clicks save button.\end{tabular} \\ \hline
-Exception Flow &
-  \begin{tabular}[c]{@{}l@{}}3a. Actor does not have permission to edit agent\\ 5b. Actor does not fill required fields. Cannot save.\end{tabular} \\ \hline
-Alternative Flow &                                        \\ \hline
-\end{tabularx}
-\caption{Add single rate}
-\label{tab:agent-add-rate}
+\caption{Search provider}
+\label{tab:provider-search}
 \end{table}
 
 \subsection{Usecase Diagram for Staff}
@@ -340,19 +342,54 @@ Alternative Flow &                                        \\ \hline
 \begin{table}[H]
 \begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
 \hline
-Usecase name     & Unsubscribe rate change notification    \\ \hline
-Actor            & Client, Staff                           \\ \hline
-Description      & Unsubscribe rate change notification    \\ \hline
-Preconditions    & Client, Staff has view rates permission \\ \hline
-Postconditions   & Unsubscribe successful                  \\ \hline
+Usecase name     & Create FCL rate    \\ \hline
+Actor            & Staff                           \\ \hline
+Description      & Add FCL rate    \\ \hline
+Preconditions    & Staff has create rate permission \\ \hline
+Postconditions   & Create rate successful                  \\ \hline
 Normal Flow &
-  \begin{tabular}[c]{@{}l@{}}1. Actor go to Rates\\ 2. Actor choose existing rate.\\ 3. Actor choose unsubscribe button.\\ 4. Actor choose confirm button.\end{tabular} \\ \hline
+  \begin{tabular}[c]{@{}l@{}}1. Actor go to Rates\\ 2. Actor choose tab Road FCL.\\ 3. Actor choose add new button.\\ 4. Actor fill required fields.\\ 5. Actor click on save button.\end{tabular} \\ \hline
 Exception Flow   &                                         \\ \hline
 Alternative Flow &                                         \\ \hline
 \end{tabularx}
-\caption{Unsubscribe rate change notification}
-\label{tab:rate-noti-unsubcribe}
+\caption{Create FCL rate}
+\label{tab:create-fcl-rate}
 \end{table}
+
+\begin{table}[H]
+\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+\hline
+Usecase name     & Create charge type    \\ \hline
+Actor            & Staff                           \\ \hline
+Description      & Add charge type    \\ \hline
+Preconditions    & Staff has create rate permission \\ \hline
+Postconditions   & Create charge type successful                  \\ \hline
+Normal Flow &
+  \begin{tabular}[c]{@{}l@{}}1. Actor go to Settings\\ 2. Actor choose tab Charge Type Management.\\ 3. Actor choose add new button.\\ 4. Actor fill required fields.\\ 5. Actor click on save button.\end{tabular} \\ \hline
+Exception Flow   &                                         \\ \hline
+Alternative Flow &                                         \\ \hline
+\end{tabularx}
+\caption{Create charge type}
+\label{tab:create-charge-type}
+\end{table}
+
+\begin{table}[H]
+  \begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+  \hline
+  Usecase name     & Create service charge    \\ \hline
+  Actor            & Staff                           \\ \hline
+  Description      & Add service charge    \\ \hline
+  Preconditions    & Staff has create rate permission \\ \hline
+  Postconditions   & Create service charge successful                  \\ \hline
+  Normal Flow &
+    \begin{tabular}[c]{@{}l@{}}1. Actor go to Rates\\ 2. Actor choose tab Service Charge.\\ 3. Actor choose add new button.\\ 4. Actor fill required fields.\\ 5. Actor click on save button.\end{tabular} \\ \hline
+  Exception Flow   & 
+    \begin{tabular}[c]{@{}l@{}}4a.There is not charge type available.\\ Cannot create service charge.\end{tabular}\\ \hline
+  Alternative Flow &                                         \\ \hline
+  \end{tabularx}
+  \caption{Create service charge}
+  \label{tab:create-service-charge}
+  \end{table}
 
 \subsubsection{Quote Settings}
 \begin{table}[H]
@@ -363,7 +400,7 @@ Actor            & Staff                                      \\ \hline
 Description      & View all quote requests.                   \\ \hline
 Preconditions    & Staff has view quote permission            \\ \hline
 Postconditions   & Display a paginated list of quote requests \\ \hline
-Normal Flow & \begin{tabular}[c]{@{}l@{}}1. Actor go to Quotations.\\ 2. Actor go to Quote Request tab.\end{tabular} \\ \hline
+Normal Flow & \begin{tabular}[c]{@{}l@{}}1. Actor go to Quotes.\\ 2. Actor go to Quote Request tab.\end{tabular} \\ \hline
 Exception Flow   &                                            \\ \hline
 Alternative Flow &                                            \\ \hline
 \end{tabularx}
@@ -390,35 +427,89 @@ Alternative Flow &                                 \\ \hline
 \begin{table}[H]
 \begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
 \hline
-Usecase name     & Change status of a quote request                                           \\ \hline
-Actor            & Staff                                                                      \\ \hline
-Description      & Change status of a quote request                                           \\ \hline
-Preconditions    & Staff has view and edit quote permission                                   \\ \hline
-Postconditions   & Update status successful                                                   \\ \hline
-Normal Flow &
-  \begin{tabular}[c]{@{}l@{}}1. Actor go to Quotations.\\ 2. Actor go to Quote Request tab.\\ 3. Actor choose a quote request.\\ 4. Actor choose status\\ 5. Actor choose update\end{tabular} \\ \hline
-Exception Flow   & 5a. Status changed failed because status must be changed level one by one. \\ \hline
-Alternative Flow &                                                                            \\ \hline
-\end{tabularx}
-\caption{Change quote request status}
-\label{tab:quote-request-status-change}
-\end{table}
-
-\begin{table}[H]
-\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
-\hline
 Usecase name     & Create quote from request                        \\ \hline
 Actor            & Staff                                            \\ \hline
 Description      & Generate a quote from the quote request          \\ \hline
 Preconditions    & Staff has view, create and edit quote permission \\ \hline
 Postconditions   & Create quote successful                          \\ \hline
 Normal Flow &
-  \begin{tabular}[c]{@{}l@{}}1. Actor go to Quotations.\\ 2. Actor go to Quote Request tab.\\ 3. Actor choose a quote request.\\ 4. Actor choose create quote from request button.\\ 5. Actor choose confirm.\end{tabular} \\ \hline
+  \begin{tabular}[c]{@{}l@{}}1. Actor go to Quotations.\\ 2. Actor go to Quote Request tab.\\ 3. Actor choose a quote request.\\ 4. Actor choose create quote from request button.\\ 5. Actor fill required fields.\\ 6. Actor click on save button.\end{tabular} \\ \hline
 Exception Flow   &                                                  \\ \hline
 Alternative Flow &                                                  \\ \hline
 \end{tabularx}
 \caption{Create quote from request}
 \label{tab:quote-create-from-request}
+\end{table}
+
+\begin{table}[H]
+\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+\hline
+Usecase name     & Create quote                        \\ \hline
+Actor            & Staff                                            \\ \hline
+Description      & Generate a quote         \\ \hline
+Preconditions    & Staff has view, create and edit quote permission \\ \hline
+Postconditions   & Create quote successful                          \\ \hline
+Normal Flow &
+  \begin{tabular}[c]{@{}l@{}}1. Actor go to Quotations.\\ 2. Actor go to Quote tab.\\ 3. Actor choose create new button.\\4. Actor fill required fields.\\ 5. Actor click on save button.\end{tabular} \\ \hline
+Exception Flow   &                                                  \\ \hline
+Alternative Flow &                                                  \\ \hline
+\end{tabularx}
+\caption{Create quote}
+\label{tab:quote-create}
+\end{table}
+
+\begin{table}[H]
+\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+\hline
+Usecase name     & Search quotes                       \\ \hline
+Actor            & Admin, Staff                       \\ \hline
+Description      & Search quotes                       \\ \hline
+Preconditions    & Staff has view quote permission or Admin \\ \hline
+Postconditions &
+  Display a paginated list of quotes related to the search information. \\ \hline
+Normal Flow &
+  \begin{tabular}[c]{@{}l@{}}1. Actor go to Quotations.\\ 2. Actor go to Quote tab.\\3. Actor enter code to search.\end{tabular} \\ \hline
+Exception Flow   & Keyword search does not match \\ \hline
+Alternative Flow &                                    \\ \hline
+\end{tabularx}
+\caption{Search quotes}
+\label{tab:quote-search}
+\end{table}
+
+\begin{table}[H]
+\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+\hline
+Usecase name     & Search quotes filter field                     \\ \hline
+Actor            & Admin, Staff                       \\ \hline
+Description      & Search quote filter specific field                      \\ \hline
+Preconditions    & Staff has view quote permission or Admin \\ \hline
+Postconditions &
+  Display a paginated list of quotes related to the search information. \\ \hline
+Normal Flow &
+  \begin{tabular}[c]{@{}l@{}}1. Actor go to Quotations.\\ 2. Actor go to Quote tab.\\3. Actor click on search filter button.\\4. Actor choose field to search.\\5. Actor click on apply button.\end{tabular} \\ \hline
+Exception Flow   & Keyword search does not match \\ \hline
+Alternative Flow &                                    \\ \hline
+\end{tabularx}
+\caption{Search quotes filter field}
+\label{tab:quote-search-filter-field}
+\end{table}
+
+\begin{table}[H]
+\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+\hline
+Usecase name     & Sort quotes                       \\ \hline
+Actor            & Admin, Staff                       \\ \hline
+Description      & Sort quotes                       \\ \hline
+Preconditions    & Staff has view quote permission or Admin \\ \hline
+Postconditions &
+  Display a paginated list of quotes related to the sorted column. \\ \hline
+Normal Flow &
+  \begin{tabular}[c]{@{}l@{}}1. Actor go to Quotations.\\ 2. Actor go to Quote tab.\\3. Actor choose column to sort.\end{tabular} \\ \hline
+Exception Flow   &  \\ \hline
+Alternative Flow &                                    \\ \hline
+\end{tabularx}
+\caption{Sort quotes}
+\label{tab:quote-sort}
 \end{table}
 
 \subsubsection{Shipment Settings}
@@ -432,12 +523,80 @@ Preconditions &
   \begin{tabular}[c]{@{}l@{}}1. Staff has create shipment permission.\\ 2. A quote is created.\end{tabular} \\ \hline
 Postconditions   & Create shipment successful \\ \hline
 Normal Flow &
-  \begin{tabular}[c]{@{}l@{}}1. Actor go to Quotations.\\ 2. Actor go to Quote tab.\\ 3. Actor choose a quote not booked.\\ 4. Actor choose create shipment button.\\ 5. Actor update shipment information.\\ 6. Actor choose create.\end{tabular} \\ \hline
+  \begin{tabular}[c]{@{}l@{}}1. Actor go to Quotations.\\ 2. Actor go to Quote tab.\\ 3. Actor choose a quote not booked.\\ 4. Actor choose create shipment button.\\ 5. Actor update shipment information.\\ 6. Actor click on save button.\end{tabular} \\ \hline
 Exception Flow   &                            \\ \hline
 Alternative Flow &                            \\ \hline
 \end{tabularx}
 \caption{Create shipment from quote}
 \label{tab:shipment-create-from-quote}
+\end{table}
+
+\begin{table}[H]
+\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+\hline
+Usecase name     & View shipment               \\ \hline
+Actor            & Staff                      \\ \hline
+Description      & View a shipment             \\ \hline
+Preconditions & Staff has view shipment permission. \\ \hline
+Postconditions   & Display shipment detail. \\ \hline
+Normal Flow &
+  \begin{tabular}[c]{@{}l@{}}1. Actor go to Shipments.\\ 2. Actor choose a shipment.\\ 3. Actor click on view shipment button.\end{tabular} \\ \hline
+Exception Flow   &                            \\ \hline
+Alternative Flow &                            \\ \hline
+\end{tabularx}
+\caption{View shipment}
+\label{tab:shipment-view}
+\end{table}
+
+\begin{table}[H]
+\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+\hline
+Usecase name     & Upload shipment document               \\ \hline
+Actor            & Staff                      \\ \hline
+Description      & Upload related documents to shipment             \\ \hline
+Preconditions & Staff has shipment permission. \\ \hline
+Postconditions   & Display shipment detail. \\ \hline
+Normal Flow &
+  \begin{tabular}[c]{@{}l@{}}1. Actor go to Shipments.\\ 2. Actor choose a shipment.\\ 3. Actor click on view shipment button.\\ 4. Actor click Document tab.\\ 5. Actor upload new document.\\ 6. Actor click on save button.\\\end{tabular} \\ \hline
+Exception Flow   &                            \\ \hline
+Alternative Flow &                            \\ \hline
+\end{tabularx}
+\caption{Upload shipment document}
+\label{tab:shipment-upload-document}
+\end{table}
+
+\begin{table}[H]
+\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+\hline
+Usecase name     & Add shipment debit note               \\ \hline
+Actor            & Staff                      \\ \hline
+Description      & Add credit/debit note to shipment             \\ \hline
+Preconditions & Staff has shipment permission. \\ \hline
+Postconditions   & Add credit/debit note successful. \\ \hline
+Normal Flow &
+  \begin{tabular}[c]{@{}l@{}}1. Actor go to Shipments.\\ 2. Actor choose a shipment.\\ 3. Actor click on view shipment button.\\ 4. Actor click Profit and Loss tab.\\ 5. Actor add new credit/debit note.\\ 6. Actor click on save button.\\\end{tabular} \\ \hline
+Exception Flow   &                            \\ \hline
+Alternative Flow &                            \\ \hline
+\end{tabularx}
+\caption{Add shipment debit note}
+\label{tab:shipment-debit-not}
+\end{table}
+
+\begin{table}[H]
+\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+\hline
+Usecase name     & View shipment profit and loss               \\ \hline
+Actor            & Staff                      \\ \hline
+Description      & View a shipment             \\ \hline
+Preconditions & Staff has view shipment permission. \\ \hline
+Postconditions   & Display shipment profit and loss. \\ \hline
+Normal Flow &
+  \begin{tabular}[c]{@{}l@{}}1. Actor go to Shipments.\\ 2. Actor choose a shipment.\\ 3. Actor click on view shipment button.\\ 4. Actor click Profit and Loss tab.\end{tabular} \\ \hline
+Exception Flow   &                            \\ \hline
+Alternative Flow &                            \\ \hline
+\end{tabularx}
+\caption{View shipment profit and loss}
+\label{tab:shipment-profit-view}
 \end{table}
 
 \subsection{Usecase Diagram for Client}
@@ -448,6 +607,56 @@ Alternative Flow &                            \\ \hline
     \label{fig:Usecase Diagram for Client}
 \end{figure}
 
+\subsubsection{Quote Settings}
+\begin{table}[H]
+\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+\hline
+Usecase name     & Create quote request                  \\ \hline
+Actor            & Client                                 \\ \hline
+Description      & Create quote request                     \\ \hline
+Preconditions    & 1. Client has create quote request permission. \\ \hline
+Postconditions   & Display quote request detail         \\ \hline
+Normal Flow & \begin{tabular}[c]{@{}l@{}}1. Actor go to Quotes.\\ 2. Actor choose tab quote request.\\ 3. Actor click on add new button.\\4. Actor fill required fields.\\ 5. Actor click on save button. \end{tabular} \\ \hline
+Exception Flow   &                                        \\ \hline
+Alternative Flow &                                        \\ \hline
+\end{tabularx}
+\caption{Create quote request}
+\label{tab:quote-request-create}
+\end{table}
+
+\begin{table}[H]
+  \begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+  \hline
+  Usecase name     & Create quote request from landing page                 \\ \hline
+  Actor            & Client                                 \\ \hline
+  Description      & Create quote request from landing page                    \\ \hline
+  Preconditions    &   \\ \hline
+  Postconditions   & Create and send to staff         \\ \hline
+  Normal Flow & \begin{tabular}[c]{@{}l@{}}1. Actor go to Landing Page.\\ 2. Actor choose Quote request.\\3. Actor fill required fields.\\ 4. Actor click on send button. \end{tabular} \\ \hline
+  Exception Flow   &                                        \\ \hline
+  Alternative Flow &                                        \\ \hline
+  \end{tabularx}
+  \caption{Create quote requestfrom landing page}
+  \label{tab:quote-request-create-landing-page}
+  \end{table}
+
+\begin{table}[H]
+\begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
+\hline
+Usecase name     & Send quote request to staff                  \\ \hline
+Actor            & Client                                 \\ \hline
+Description      & Send quote request to staff                     \\ \hline
+Preconditions    & 1. Client has create quote request permission. \\ \hline
+Postconditions   & Send to staff successful         \\ \hline
+Normal Flow & \begin{tabular}[c]{@{}l@{}}1. Actor go to Quotes.\\ 2. Actor choose tab quote request.\\ 3. Actor click on existing quote request.\\ 4. Actor click on send button. \end{tabular} \\ \hline
+Exception Flow   &                                        \\ \hline
+Alternative Flow &                                        \\ \hline
+\end{tabularx}
+\caption{Send quote request}
+\label{tab:quote-request-send}
+\end{table}
+
+\subsubsection{Shipment Settings}
 \begin{table}[H]
 \begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
 \hline
@@ -460,10 +669,9 @@ Normal Flow & \begin{tabular}[c]{@{}l@{}}1. Actor go to Shipments.\\ 2. Actor ch
 Exception Flow   &                                        \\ \hline
 Alternative Flow &                                        \\ \hline
 \end{tabularx}
-\caption{View shipment}
-\label{tab:shipment-view}
+\caption{View shipment status}
+\label{tab:shipment-status-view}
 \end{table}
-
 
 \begin{table}[H]
 \begin{tabularx}{\textwidth}{|p{0.25\textwidth}|X|}
